@@ -1,0 +1,5312 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Doton - Connect the Dots (Optimized)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/webp" href="data:image/webp;base64,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">
+
+<style>
+  :root{
+    --bg:#0a0e1a;
+    --bg-dark:#151b2e;
+    --text:#e8eaf0;
+    --text-light:#8b92a8;
+    --accent:#6b7bf7;
+    --board-bg:#12182b;
+    --shadow:rgba(0,0,0,0.4);
+    
+    --dot1:#ea6b6b;
+    --dot2:#ffa8a8;
+    --dot3:#8b9bff;
+    --dot4:#6ba89b;
+  }
+  
+  * {box-sizing:border-box;margin:0;padding:0;}
+  
+  html,body{
+    height:100%;
+    font-family:'Nunito',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow:hidden;
+  }
+  
+  .menu{
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2000;
+    background:var(--bg);
+  }
+  
+  .menu-content{
+    text-align:center;
+    padding:40px 40px;
+    max-width:500px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  
+  .menu-title{
+    font-size:52px;
+    font-weight:500;
+    margin-bottom:30px;
+    letter-spacing:1px;
+    color:#8b7bf7;
+    order:1;
+  }
+  
+  .menu-logo{
+    max-width:280px;
+    height:auto;
+    margin-bottom:25px;
+    order:1;
+    filter: drop-shadow(0 4px 15px rgba(139,123,247,0.4));
+    animation: logoGlow 3s ease-in-out infinite;
+  }
+  
+  @keyframes logoGlow{
+    0%, 100%{ filter: drop-shadow(0 4px 15px rgba(139,123,247,0.4)); }
+    50%{ filter: drop-shadow(0 6px 25px rgba(139,123,247,0.6)); }
+  }
+  
+  .menu-title .logo-d{
+    color:#f5f0e6;
+    font-weight:500;
+  }
+  
+  .menu-title .logo-o{
+    color:#8b7bf7;
+    font-weight:500;
+  }
+  
+  .menu-subtitle{
+    font-size:14px;
+    color:var(--text-light);
+    margin-bottom:30px;
+    font-weight:300;
+    line-height:1.6;
+    order:2;
+  }
+  
+  .logo{
+    width:140px;
+    height:140px;
+    margin:0 auto 30px;
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    gap:8px;
+    padding:15px;
+    background:var(--board-bg);
+    border-radius:28px;
+    box-shadow:0 8px 30px var(--shadow), 0 0 40px rgba(107,123,247,0.2);
+    animation:logoFloat 4s ease-in-out infinite;
+    order:3;
+  }
+  
+  .mode-selector{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-bottom:20px;
+    align-items:center;
+    width:100%;
+    order:4;
+  }
+  
+  .mode-btn{
+    background:var(--bg-dark);
+    color:var(--text);
+    border:2px solid rgba(139,146,168,0.2);
+    padding:14px 24px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:500;
+    cursor:pointer;
+    transition:all 0.3s;
+    letter-spacing:0.5px;
+    width:100%;
+    max-width:200px;
+  }
+  
+  .mode-btn.active{
+    background:var(--accent);
+    color:white;
+    border-color:var(--accent);
+    box-shadow:0 4px 15px rgba(107,123,247,0.4);
+  }
+  
+  .mode-btn:hover{
+    transform:translateY(-2px);
+  }
+  
+  .start-btn{
+    background:#8b7bf7;
+    color:white;
+    border:none;
+    padding:18px 50px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+    transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:0 6px 20px rgba(139,123,247,0.4);
+    letter-spacing:1px;
+    width:100%;
+    max-width:280px;
+    order:5;
+  }
+  
+  .start-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(139,123,247,0.6);
+  }
+  
+  .profile-btn-floating{
+    position:absolute;
+    top:30px;
+    right:30px;
+    width:50px;
+    height:50px;
+    background:var(--bg-dark);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:50%;
+    cursor:pointer;
+    transition:all 0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    color:var(--text);
+    padding:0;
+    box-shadow:0 4px 15px var(--shadow);
+  }
+  
+  .profile-btn-floating svg{
+    width:28px;
+    height:28px;
+    stroke:var(--text);
+    stroke-width:2;
+    fill:none;
+  }
+  
+  .profile-btn-floating:hover{
+    transform:translateY(-2px) scale(1.05);
+    box-shadow:0 6px 20px var(--shadow);
+    border-color:rgba(255,255,255,0.4);
+    background:rgba(255,255,255,0.1);
+  }
+  
+  .profile-btn-floating:hover svg{
+    stroke:white;
+  }
+  
+  @keyframes logoFloat{
+    0%, 100%{transform:translateY(0);box-shadow:0 8px 30px var(--shadow), 0 0 40px rgba(107,123,247,0.2);}
+    50%{transform:translateY(-6px);box-shadow:0 14px 40px var(--shadow), 0 0 60px rgba(107,123,247,0.3);}
+  }
+  
+  .logo-dot{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    box-shadow:0 2px 8px rgba(0,0,0,0.3);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .logo:hover .logo-dot{
+    animation:dotPulse 0.6s ease-in-out;
+  }
+  
+  .logo-dot:nth-child(1){animation-delay:0s;}
+  .logo-dot:nth-child(2){animation-delay:0.05s;}
+  .logo-dot:nth-child(3){animation-delay:0.1s;}
+  .logo-dot:nth-child(4){animation-delay:0.15s;}
+  .logo-dot:nth-child(5){animation-delay:0.2s;}
+  .logo-dot:nth-child(6){animation-delay:0.25s;}
+  .logo-dot:nth-child(7){animation-delay:0.3s;}
+  .logo-dot:nth-child(8){animation-delay:0.35s;}
+  .logo-dot:nth-child(9){animation-delay:0.4s;}
+  
+  @keyframes dotPulse{
+    0%, 100%{transform:scale(1);}
+    50%{transform:scale(1.15);box-shadow:0 4px 15px rgba(107,123,247,0.5);}
+  }
+  
+  /* Анимация погружения в логотип */
+  .menu.diving{
+    animation:none;
+  }
+  
+  .menu.diving .logo{
+    animation:logoDive 1.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
+  
+  .menu.diving .menu-content > *:not(.logo){
+    animation:fadeOutDown 0.7s ease-out forwards;
+  }
+  
+  .menu.diving::after{
+    content:'';
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:0;
+    height:0;
+    background:radial-gradient(circle, var(--board-bg) 0%, var(--bg) 70%);
+    border-radius:50%;
+    transform:translate(-50%, -50%);
+    animation:expandCircle 1s 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    z-index:2001;
+  }
+  
+  @keyframes logoDive{
+    0%{
+      transform:translateY(0) scale(1);
+      opacity:1;
+    }
+    30%{
+      transform:translateY(-15px) scale(1.08);
+      opacity:1;
+    }
+    60%{
+      transform:translateY(-10px) scale(1.5);
+      opacity:1;
+    }
+    100%{
+      transform:translateY(0) scale(18);
+      opacity:0;
+    }
+  }
+  
+  @keyframes fadeOutDown{
+    0%{
+      opacity:1;
+      transform:translateY(0);
+    }
+    100%{
+      opacity:0;
+      transform:translateY(30px);
+    }
+  }
+  
+  @keyframes expandCircle{
+    0%{
+      width:0;
+      height:0;
+      opacity:1;
+    }
+    100%{
+      width:300vmax;
+      height:300vmax;
+      opacity:1;
+    }
+  }
+  
+  .game-container.appearing{
+    animation:gameAppear 0.5s ease-out forwards;
+  }
+  
+  @keyframes gameAppear{
+    0%{
+      opacity:0;
+      transform:scale(0.9);
+    }
+    100%{
+      opacity:1;
+      transform:scale(1);
+    }
+  }
+  
+  .menu-title{
+    font-size:48px;
+    font-weight:300;
+    margin-bottom:15px;
+    letter-spacing:2px;
+    color:var(--text);
+  }
+  
+  .menu-subtitle{
+    font-size:14px;
+    color:var(--text-light);
+    margin-bottom:30px;
+    font-weight:300;
+    line-height:1.6;
+  }
+  
+  .menu-actions{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  
+  .icon-btn{
+    width:50px;
+    height:50px;
+    background:var(--bg-dark);
+    border:1px solid rgba(139,146,168,0.2);
+    border-radius:50%;
+    cursor:pointer;
+    transition:all 0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    color:var(--text);
+  }
+  
+  .icon-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 15px var(--shadow);
+    border-color:var(--accent);
+  }
+  
+  .mode-selector{
+    display:flex;
+    gap:12px;
+    margin-bottom:40px;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:100%;
+  }
+  
+  .mode-btn{
+    background:var(--bg-dark);
+    color:var(--text);
+    border:2px solid rgba(139,146,168,0.2);
+    padding:14px 24px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:500;
+    cursor:pointer;
+    transition:all 0.3s;
+    letter-spacing:0.5px;
+    flex:1;
+    min-width:100px;
+    max-width:140px;
+  }
+  
+  .mode-btn.active{
+    background:var(--accent);
+    color:white;
+    border-color:var(--accent);
+    box-shadow:0 4px 15px rgba(107,123,247,0.4);
+  }
+  
+  .mode-btn:hover{
+    transform:translateY(-2px);
+  }
+  
+  .start-btn{
+    background:var(--accent);
+    color:white;
+    border:none;
+    padding:18px 50px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+    transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:0 6px 20px rgba(107,123,247,0.4);
+    letter-spacing:1px;
+    width:100%;
+    max-width:280px;
+  }
+  
+  .start-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(107,123,247,0.6);
+  }
+  
+  .game-container{
+    display:none;
+    height:100vh;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+  }
+  
+  .game-header{
+    width:100%;
+    max-width:600px;
+    margin-bottom:30px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+  }
+  
+  .pause-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+    background:var(--bg-dark);
+    border:1px solid rgba(139,146,168,0.2);
+    border-radius:50%;
+    cursor:pointer;
+    transition:all 0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    color:var(--text);
+    z-index:5000;
+    box-shadow:0 4px 15px var(--shadow);
+    opacity:0;
+    pointer-events:none;
+  }
+  
+  .pause-btn.visible{
+    opacity:1;
+    pointer-events:auto;
+  }
+  
+  .pause-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 6px 20px rgba(107,123,247,0.4);
+    border-color:var(--accent);
+    background:var(--accent);
+    color:white;
+  }
+  
+  .restart-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    width:50px;
+    height:50px;
+    background:var(--bg-dark);
+    border:1px solid rgba(139,146,168,0.2);
+    border-radius:50%;
+    cursor:pointer;
+    transition:all 0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    color:var(--text);
+    z-index:5000;
+    box-shadow:0 4px 15px var(--shadow);
+    opacity:0;
+    pointer-events:none;
+  }
+  
+  .restart-btn.visible{
+    opacity:1;
+    pointer-events:auto;
+  }
+  
+  .restart-btn:hover{
+    transform:scale(1.1) rotate(180deg);
+    box-shadow:0 6px 20px rgba(107,123,247,0.4);
+    border-color:var(--accent);
+    background:var(--accent);
+    color:white;
+  }
+  
+  .score-display{
+    font-size:64px;
+    font-weight:200;
+    color:var(--text);
+    letter-spacing:-2px;
+    transition:all 0.3s;
+    text-shadow:0 0 30px rgba(107,123,247,0.3);
+  }
+  
+  .score-display.animate{
+    transform:scale(1.1);
+  }
+  
+  .circular-timer{
+    position:relative;
+    width:180px;
+    height:180px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .circular-timer svg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform:rotate(-90deg);
+  }
+  
+  .circular-timer-bg{
+    fill:none;
+    stroke:var(--bg-dark);
+    stroke-width:8;
+  }
+  
+  .circular-multiplier-progress{
+    fill:none;
+    stroke:url(#multiplierGradient);
+    stroke-width:8;
+    stroke-linecap:round;
+    transition:stroke-dashoffset 0.3s ease-out;
+    opacity:0.8;
+  }
+  
+  .timer-content{
+    position:relative;
+    text-align:center;
+    z-index:1;
+  }
+  
+  .timer-value{
+    font-size:56px;
+    font-weight:200;
+    color:var(--text);
+    line-height:1;
+    letter-spacing:-2px;
+  }
+  
+  .timer-value.warning{
+    color:var(--dot1);
+    animation:pulseText 1s ease-in-out infinite;
+  }
+  
+  @keyframes pulseText{
+    0%, 100%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+  }
+  
+  .timer-label{
+    font-size:13px;
+    color:var(--text-light);
+    margin-top:4px;
+    font-weight:300;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  
+  .moves-content{
+    text-align:center;
+  }
+  
+  .moves-value{
+    font-size:56px;
+    font-weight:200;
+    color:var(--text);
+    line-height:1;
+    letter-spacing:-2px;
+  }
+  
+  .moves-label{
+    font-size:13px;
+    color:var(--text-light);
+    margin-top:4px;
+    font-weight:300;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  
+  /* Freeze Timer */
+  .freeze-content{
+    text-align:center;
+  }
+  
+  .freeze-value{
+    font-size:56px;
+    font-weight:200;
+    color:var(--text);
+    line-height:1;
+    letter-spacing:-2px;
+  }
+  
+  .freeze-label{
+    font-size:20px;
+    margin-top:4px;
+  }
+  
+  .target-display{
+    font-size:14px;
+    color:var(--text-light);
+    margin-top:12px;
+    font-weight:300;
+    display:none;
+  }
+  
+  .target-display .highlight{
+    color:#ffd700;
+    font-weight:500;
+  }
+  
+  canvas{
+    display:block;
+    touch-action:none;
+    border-radius:30px;
+    background:var(--board-bg);
+    box-shadow:
+      0 20px 60px var(--shadow),
+      inset 0 1px 0 rgba(255,255,255,0.05),
+      0 0 80px rgba(107,123,247,0.1);
+    cursor:crosshair;
+    max-width:100%;
+    height:auto;
+  }
+  
+  .modal{
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(10,14,26,0.98);
+    backdrop-filter:blur(20px);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:3000;
+    overflow-y:auto;
+  }
+  
+  .modal-content{
+    text-align:center;
+    padding:60px 40px;
+    max-width:500px;
+    margin:auto;
+  }
+  
+  .modal-title{
+    font-size:48px;
+    font-weight:300;
+    margin-bottom:15px;
+    color:var(--text);
+    letter-spacing:1px;
+  }
+  
+  .modal-subtitle{
+    font-size:16px;
+    color:var(--text-light);
+    margin-bottom:40px;
+    font-weight:300;
+  }
+  
+  .modal-score{
+    font-size:80px;
+    font-weight:200;
+    color:var(--text);
+    margin:30px 0;
+    letter-spacing:-3px;
+    text-shadow:0 0 40px rgba(107,123,247,0.4);
+  }
+  
+  .modal-btn{
+    background:var(--accent);
+    color:white;
+    border:none;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:all 0.3s;
+    margin:8px;
+    box-shadow:0 6px 20px rgba(107,123,247,0.4);
+    letter-spacing:0.5px;
+  }
+  
+  .modal-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(107,123,247,0.6);
+  }
+  
+  .modal-btn.secondary{
+    background:transparent;
+    color:var(--text);
+    border:2px solid var(--bg-dark);
+    box-shadow:none;
+  }
+  
+  .modal-btn.secondary:hover{
+    background:var(--bg-dark);
+    border-color:var(--accent);
+  }
+  
+  .pause-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    width:100%;
+    max-width:320px;
+    margin:20px auto 0;
+  }
+  
+  .pause-buttons .modal-btn{
+    margin:0;
+    width:100%;
+    padding:16px 30px;
+  }
+  
+  .combo{
+    position:absolute;
+    font-size:20px;
+    font-weight:500;
+    pointer-events:none;
+    animation:comboFloat 1s ease-out forwards;
+    z-index:100;
+    color:var(--text);
+    opacity:0.9;
+    text-shadow:0 0 20px rgba(107,123,247,0.6);
+  }
+  
+  .profile-modal .modal-content{
+    max-width:600px;
+    text-align:left;
+  }
+  
+  .profile-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid rgba(139,146,168,0.2);
+  }
+  
+  .avatar-picker{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    cursor:pointer;
+    transition:all 0.3s;
+    position:relative;
+    box-shadow:0 4px 20px rgba(0,0,0,0.4), 0 0 30px rgba(107,123,247,0.3);
+    border:3px solid rgba(255,255,255,0.1);
+    flex-shrink:0;
+  }
+  
+  .avatar-picker:hover{
+    transform:scale(1.05);
+  }
+  
+  .profile-info{
+    flex:1;
+    min-width:0;
+  }
+  
+  .profile-nickname{
+    font-size:20px;
+    font-weight:400;
+    margin-bottom:4px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  
+  .edit-nickname-btn{
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    padding:4px;
+    opacity:0.6;
+    transition:opacity 0.3s;
+  }
+  
+  .edit-nickname-btn:hover{
+    opacity:1;
+  }
+  
+  .profile-id{
+    font-size:11px;
+    color:var(--text-light);
+    font-family:monospace;
+    margin-bottom:6px;
+  }
+  
+  .profile-bubbles{
+    font-size:14px;
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-weight:500;
+  }
+  
+  .profile-section{
+    margin-bottom:18px;
+  }
+  
+  .section-title{
+    font-size:12px;
+    font-weight:600;
+    color:var(--text-light);
+    margin-bottom:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  
+  /* Статистика в карточках */
+  .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:8px;
+  }
+  
+  .stat-card{
+    background:var(--bg-dark);
+    border:1px solid rgba(139,146,168,0.2);
+    border-radius:12px;
+    padding:12px 8px;
+    text-align:center;
+    transition:all 0.3s;
+  }
+  
+  .stat-card:hover{
+    border-color:var(--accent);
+    transform:translateY(-2px);
+  }
+  
+  .stat-value{
+    font-size:22px;
+    font-weight:500;
+    color:var(--accent);
+    margin-bottom:2px;
+  }
+  
+  .stat-label{
+    font-size:10px;
+    color:var(--text-light);
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+  }
+  
+  /* Лучшие результаты по режимам */
+  .best-scores-grid{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  
+  .best-score-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:var(--bg-dark);
+    border:1px solid rgba(139,146,168,0.2);
+    border-radius:10px;
+    padding:10px 12px;
+  }
+  
+  .best-score-mode{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:13px;
+  }
+  
+  .best-score-mode-icon{
+    width:28px;
+    height:28px;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+  }
+  
+  .best-score-value{
+    font-size:16px;
+    font-weight:500;
+    color:var(--text);
+  }
+  
+  /* Друзья и лидеры */
+  .social-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+  
+  .social-btn{
+    background:var(--bg-dark);
+    border:1px solid rgba(139,146,168,0.2);
+    border-radius:12px;
+    padding:12px;
+    text-align:center;
+    cursor:pointer;
+    transition:all 0.3s;
+    color:var(--text);
+  }
+  
+  .social-btn:hover{
+    border-color:var(--accent);
+    background:rgba(107,123,247,0.1);
+  }
+  
+  .social-btn-icon{
+    font-size:20px;
+    margin-bottom:4px;
+  }
+  
+  .social-btn-label{
+    font-size:11px;
+    color:var(--text-light);
+  }
+  
+  .social-btn-value{
+    font-size:14px;
+    font-weight:500;
+    margin-top:2px;
+  }
+  
+  /* Модалка лидеров */
+  .leaderboard-list{
+    max-height:280px;
+    overflow-y:auto;
+  }
+  
+  .leaderboard-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    background:var(--bg-dark);
+    border-radius:10px;
+    margin-bottom:6px;
+    border:1px solid rgba(139,146,168,0.1);
+  }
+  
+  .leaderboard-item.current-user{
+    border-color:var(--accent);
+    background:rgba(107,123,247,0.1);
+  }
+  
+  .leaderboard-rank{
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    font-weight:600;
+    background:var(--bg);
+    flex-shrink:0;
+  }
+  
+  .leaderboard-rank.gold{background:linear-gradient(135deg, #ffd700, #ffed4e);color:#333;}
+  .leaderboard-rank.silver{background:linear-gradient(135deg, #c0c0c0, #e8e8e8);color:#333;}
+  .leaderboard-rank.bronze{background:linear-gradient(135deg, #cd7f32, #e8a862);color:#333;}
+  
+  .leaderboard-avatar{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+    flex-shrink:0;
+  }
+  
+  .leaderboard-info{
+    flex:1;
+    min-width:0;
+  }
+  
+  .leaderboard-name{
+    font-size:13px;
+    font-weight:500;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  
+  .leaderboard-score{
+    font-size:14px;
+    font-weight:500;
+    color:var(--accent);
+    flex-shrink:0;
+  }
+  
+  /* Табы для таблицы лидеров */
+  .leaderboard-tabs{
+    display:flex;
+    gap:4px;
+    margin-bottom:12px;
+    background:var(--bg-dark);
+    padding:4px;
+    border-radius:10px;
+  }
+  
+  .leaderboard-tab{
+    flex:1;
+    padding:8px;
+    border:none;
+    background:transparent;
+    color:var(--text-light);
+    border-radius:8px;
+    cursor:pointer;
+    font-size:12px;
+    transition:all 0.3s;
+  }
+  
+  .leaderboard-tab.active{
+    background:var(--accent);
+    color:white;
+  }
+  
+  .profile-modal .modal-content{
+    max-height:85vh;
+    overflow-y:auto;
+  }
+  
+  .wallet-connect{
+    padding:15px 20px;
+    background:var(--bg-dark);
+    border:1px solid rgba(139,146,168,0.2);
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    cursor:pointer;
+    transition:all 0.3s;
+  }
+  
+  .wallet-connect:hover{
+    background:var(--accent);
+    color:white;
+    border-color:var(--accent);
+  }
+  
+  .wallet-status{
+    font-size:14px;
+  }
+  
+  .input-group{
+    margin-bottom:15px;
+  }
+  
+  .input-label{
+    font-size:13px;
+    color:var(--text-light);
+    margin-bottom:5px;
+    display:block;
+  }
+  
+  .input-field{
+    width:100%;
+    padding:12px 15px;
+    background:var(--bg-dark);
+    border:2px solid rgba(139,146,168,0.2);
+    border-radius:12px;
+    font-size:15px;
+    font-family:inherit;
+    transition:all 0.3s;
+    color:var(--text);
+  }
+  
+  .input-field:focus{
+    outline:none;
+    border-color:var(--accent);
+    background:var(--bg);
+    box-shadow:0 0 20px rgba(107,123,247,0.2);
+  }
+  
+  .avatar-grid{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:10px;
+    margin-top:15px;
+  }
+  
+  .avatar-option{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    cursor:pointer;
+    transition:all 0.3s;
+    border:3px solid rgba(255,255,255,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.3);
+  }
+  
+  .avatar-option:hover{
+    transform:scale(1.15);
+    box-shadow:0 4px 20px rgba(0,0,0,0.5), 0 0 20px rgba(107,123,247,0.4);
+    border-color:rgba(255,255,255,0.3);
+  }
+  
+  .avatar-option.selected{
+    border-color:var(--accent);
+    border-width:4px;
+    transform:scale(1.15);
+    box-shadow:0 4px 25px rgba(107,123,247,0.6), 0 0 30px var(--accent);
+  }
+  
+  .rules-content{
+    text-align:left;
+    max-width:600px;
+  }
+  
+  .rules-section{
+    margin-bottom:25px;
+    padding:20px;
+    background:var(--bg-dark);
+    border-radius:15px;
+    border:1px solid rgba(139,146,168,0.2);
+  }
+  
+  .rules-section h3{
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:15px;
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  
+  .rules-section p{
+    font-size:15px;
+    line-height:1.6;
+    color:var(--text-light);
+    margin-bottom:10px;
+  }
+  
+  .rules-section ul{
+    list-style:none;
+    padding:0;
+    margin-top:10px;
+  }
+  
+  .rules-section li{
+    font-size:14px;
+    line-height:1.8;
+    color:var(--text-light);
+    padding-left:20px;
+    position:relative;
+    margin-bottom:8px;
+  }
+  
+  .rules-section li:before{
+    content:'•';
+    position:absolute;
+    left:5px;
+    color:var(--accent);
+    font-size:18px;
+  }
+  
+  .highlight{
+    color:var(--accent);
+    font-weight:500;
+  }
+  
+  .warning{
+    color:var(--dot1);
+    font-weight:500;
+  }
+  
+  .bubble-indicator{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    padding:4px 10px;
+    background:linear-gradient(135deg, var(--dot1), var(--dot2));
+    color:white;
+    border-radius:12px;
+    font-size:13px;
+    font-weight:500;
+    box-shadow:0 0 20px rgba(234,107,107,0.3);
+  }
+  
+  /* ==================== FREEZE MODE STYLES ==================== */
+  .freeze-warning{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:rgba(10,14,26,0.95);
+    border:2px solid rgba(135,206,250,0.6);
+    border-radius:20px;
+    padding:20px 40px;
+    z-index:6000;
+    text-align:center;
+    animation:freezeWarningAppear 0.5s ease-out;
+    box-shadow:0 0 40px rgba(135,206,250,0.4);
+  }
+  
+  @keyframes freezeWarningAppear{
+    from{opacity:0;transform:translate(-50%, -50%) scale(0.8);}
+    to{opacity:1;transform:translate(-50%, -50%) scale(1);}
+  }
+  
+  .freeze-warning-icon{
+    font-size:48px;
+    margin-bottom:10px;
+    animation:freezeWarningShake 0.5s ease-in-out;
+  }
+  
+  @keyframes freezeWarningShake{
+    0%, 100%{transform:rotate(0deg);}
+    25%{transform:rotate(-10deg);}
+    75%{transform:rotate(10deg);}
+  }
+  
+  .freeze-warning-text{
+    font-size:18px;
+    color:#87CEFA;
+    font-weight:500;
+  }
+  
+  .thaw-effect{
+    position:fixed;
+    pointer-events:none;
+    z-index:5500;
+    animation:thawBurst 0.8s ease-out forwards;
+  }
+  
+  @keyframes thawBurst{
+    0%{opacity:1;transform:scale(0.5);}
+    50%{opacity:0.8;transform:scale(1.5);}
+    100%{opacity:0;transform:scale(2);}
+  }
+  
+  .global-thaw-effect{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:radial-gradient(circle, rgba(255,165,0,0.3) 0%, transparent 70%);
+    pointer-events:none;
+    z-index:5500;
+    animation:globalThaw 1s ease-out forwards;
+  }
+  
+  @keyframes globalThaw{
+    0%{opacity:0;}
+    30%{opacity:1;}
+    100%{opacity:0;}
+  }
+  
+  .onboarding-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(10,14,26,0.95);
+    backdrop-filter:blur(10px);
+    z-index:10000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .onboarding-content{
+    max-width:90%;
+    width:600px;
+    text-align:center;
+    padding:40px 30px;
+  }
+  
+  .onboarding-title{
+    font-size:36px;
+    font-weight:300;
+    color:var(--text);
+    margin-bottom:40px;
+    letter-spacing:1px;
+  }
+  
+  .onboarding-step{
+    display:none;
+    animation:fadeIn 0.4s ease-out;
+  }
+  
+  .onboarding-step.active{
+    display:block;
+  }
+  
+  @keyframes fadeIn{
+    from{opacity:0;transform:translateY(20px);}
+    to{opacity:1;transform:translateY(0);}
+  }
+  
+  .onboarding-visual{
+    position:relative;
+    margin:30px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:200px;
+  }
+  
+  .onboarding-description{
+    font-size:18px;
+    color:var(--text-light);
+    line-height:1.6;
+    margin-bottom:30px;
+  }
+  
+  .onboarding-arrow{
+    position:absolute;
+    color:var(--text);
+    font-size:16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    white-space:nowrap;
+    animation:arrowFloat 2s ease-in-out infinite;
+    display:none;
+  }
+  
+  @keyframes arrowFloat{
+    0%, 100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+  }
+  
+  .onboarding-arrow.top{
+    top:-50px;
+    left:50%;
+    transform:translateX(-50%);
+  }
+  
+  .onboarding-arrow.left{
+    left:-180px;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  
+  .onboarding-arrow.right{
+    right:-200px;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  
+  .onboarding-arrow.bottom{
+    bottom:-50px;
+    left:50%;
+    transform:translateX(-50%);
+  }
+  
+  .onboarding-score{
+    font-size:56px;
+    font-weight:200;
+    color:var(--text);
+    letter-spacing:-2px;
+  }
+  
+  .onboarding-timer{
+    position:relative;
+    width:180px;
+    height:180px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin:20px auto;
+  }
+  
+  .onboarding-timer svg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform:rotate(-90deg);
+  }
+  
+  .onboarding-timer-bg{
+    fill:none;
+    stroke:var(--bg-dark);
+    stroke-width:8;
+  }
+  
+  .onboarding-timer-progress{
+    fill:none;
+    stroke-width:8;
+    stroke-linecap:round;
+    stroke-dasharray:515;
+    stroke-dashoffset:515;
+  }
+  
+  .onboarding-step[data-step="3"].active .onboarding-timer-progress{
+    animation:progressFill 3s ease-in-out infinite;
+  }
+  
+  @keyframes progressFill{
+    0%{stroke-dashoffset:515;}
+    50%{stroke-dashoffset:0;}
+    100%{stroke-dashoffset:515;}
+  }
+  
+  .onboarding-timer-content{
+    position:relative;
+    text-align:center;
+    z-index:1;
+  }
+  
+  .onboarding-timer-value{
+    font-size:56px;
+    font-weight:200;
+    color:var(--text);
+    line-height:1;
+  }
+  
+  .onboarding-timer-label{
+    font-size:13px;
+    color:var(--text-light);
+    margin-top:4px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  
+  .onboarding-grid{
+    display:inline-grid;
+    grid-template-columns:repeat(5, 60px);
+    grid-template-rows:repeat(5, 60px);
+    gap:10px;
+    padding:20px;
+    background:var(--board-bg);
+    border-radius:20px;
+    box-shadow:0 10px 40px var(--shadow);
+  }
+  
+  .onboarding-dot{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    box-shadow:0 2px 8px rgba(0,0,0,0.3);
+  }
+  
+  .onboarding-buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    margin-top:30px;
+  }
+  
+  .onboarding-btn{
+    background:var(--accent);
+    color:white;
+    border:none;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:all 0.3s;
+    box-shadow:0 6px 20px rgba(107,123,247,0.4);
+  }
+  
+  .onboarding-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(107,123,247,0.6);
+  }
+  
+  .onboarding-btn.secondary{
+    background:transparent;
+    border:2px solid var(--bg-dark);
+    color:var(--text);
+    box-shadow:none;
+  }
+  
+  .onboarding-btn.secondary:hover{
+    background:var(--bg-dark);
+    border-color:var(--accent);
+  }
+  
+  .onboarding-indicators{
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    margin-top:30px;
+  }
+  
+  .onboarding-indicator{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--bg-dark);
+    transition:all 0.3s;
+  }
+  
+  .onboarding-indicator.active{
+    background:var(--accent);
+    width:24px;
+    border-radius:4px;
+  }
+  
+  @keyframes comboFloat{
+    0%{transform:translateY(0) scale(0.8);opacity:1;}
+    100%{transform:translateY(-60px) scale(1.2);opacity:0;}
+  }
+  
+  @media (max-width: 768px) {
+    .menu-title{font-size:36px;}
+    .menu-logo{max-width:200px;}
+    .score-display{font-size:56px;}
+    .modal-title{font-size:32px;}
+    .modal-score{font-size:64px;}
+    .game-container{padding:20px 15px;}
+    canvas{max-width:100%;}
+    .mode-btn{padding:12px 20px;font-size:13px;}
+    .avatar-grid{grid-template-columns:repeat(4, 1fr);}
+    .modal-content{padding:40px 20px;}
+  }
+</style>
+</head>
+<body>
+  <button class="restart-btn" id="restartBtnTop" title="Начать заново">↻</button>
+  <button class="pause-btn" id="pauseBtn" title="Пауза">⏸</button>
+  
+  <!-- Freeze Mode UI -->
+  <div class="onboarding-overlay" id="onboardingOverlay">
+    <div class="onboarding-content">
+      <div class="onboarding-title">Добро пожаловать в DOTON</div>
+      
+      <div class="onboarding-step active" data-step="1">
+        <div class="onboarding-visual">
+          <div class="onboarding-arrow top">
+            <span>Очки</span>
+            <span>↓</span>
+          </div>
+          <div class="onboarding-score">3780</div>
+        </div>
+        <div class="onboarding-description">
+          Соединяйте точки одного цвета, чтобы заработать очки.<br>
+          Чем длиннее цепочка — тем больше очков!
+        </div>
+      </div>
+      
+      <div class="onboarding-step" data-step="2">
+        <div class="onboarding-visual">
+          <div class="onboarding-arrow left">
+            <span>←</span>
+            <span>Время/ходы</span>
+          </div>
+          <div class="onboarding-timer">
+            <svg viewBox="0 0 180 180">
+              <circle class="onboarding-timer-bg" cx="90" cy="90" r="82"></circle>
+            </svg>
+            <div class="onboarding-timer-content">
+              <div class="onboarding-timer-value">180</div>
+              <div class="onboarding-timer-label">секунд</div>
+            </div>
+          </div>
+        </div>
+        <div class="onboarding-description">
+          <strong>Спринт:</strong> 3 минуты на максимум очков<br>
+          <strong>Дзен:</strong> 30 ходов без спешки
+        </div>
+      </div>
+      
+      <div class="onboarding-step" data-step="3">
+        <div class="onboarding-visual">
+          <div class="onboarding-arrow right">
+            <span>Множитель x2</span>
+            <span>→</span>
+          </div>
+          <div class="onboarding-timer">
+            <svg viewBox="0 0 180 180">
+              <defs>
+                <linearGradient id="onboardingMultiplier3Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+                  <stop offset="50%" style="stop-color:#ffed4e;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <circle class="onboarding-timer-bg" cx="90" cy="90" r="82"></circle>
+              <circle class="onboarding-timer-progress" cx="90" cy="90" r="82" stroke="url(#onboardingMultiplier3Gradient)"></circle>
+            </svg>
+            <div class="onboarding-timer-content">
+              <div class="onboarding-timer-value">180</div>
+              <div class="onboarding-timer-label">секунд</div>
+            </div>
+          </div>
+        </div>
+        <div class="onboarding-description">
+          Золотой круг заполняется при цепочках от 5 точек.<br>
+          Когда круг полный — ваши очки удваиваются!
+        </div>
+      </div>
+      
+      <div class="onboarding-indicators">
+        <div class="onboarding-indicator active"></div>
+        <div class="onboarding-indicator"></div>
+        <div class="onboarding-indicator"></div>
+      </div>
+      
+      <div class="onboarding-buttons">
+        <button class="onboarding-btn secondary" id="onboardingSkip">Пропустить</button>
+        <button class="onboarding-btn" id="onboardingNext">Далее</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu" id="menu">
+    <div class="menu-content">
+      
+      <img class="menu-logo" src="data:image/png;base64,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" alt="DOTON"/>
+      
+      <div class="logo">
+        <div class="logo-dot" style="background:#6b7bf7"></div>
+        <div class="logo-dot" style="background:#5ce1b8"></div>
+        <div class="logo-dot" style="background:#ff5757"></div>
+        
+        <div class="logo-dot" style="background:#ffd5a3"></div>
+        <div class="logo-dot" style="background:#ff6b9d"></div>
+        <div class="logo-dot" style="background:#d896ff"></div>
+        
+        <div class="logo-dot" style="background:#ff5757"></div>
+        <div class="logo-dot" style="background:#6b7bf7"></div>
+        <div class="logo-dot" style="background:#5eb8ff"></div>
+      </div>
+      
+      <div class="mode-selector">
+        <button class="mode-btn active" data-mode="endless">Спринт</button>
+        <button class="mode-btn" data-mode="zen">Дзен</button>
+        <button class="mode-btn" data-mode="freeze">Заморозка</button>
+      </div>
+      
+      <button class="start-btn" id="startGame">Играть</button>
+    </div>
+    
+    <button class="profile-btn-floating" id="profileBtn" title="Профиль">
+      <svg viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+      </svg>
+    </button>
+  </div>
+
+  <div class="game-container" id="gameContainer">
+    <div class="game-header">
+      <div class="score-display" id="scoreDisplay">0</div>
+      
+      <div class="circular-timer" id="circularTimer">
+        <svg viewBox="0 0 180 180">
+          <defs>
+            <linearGradient id="multiplierGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+              <stop offset="50%" style="stop-color:#ffed4e;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <circle class="circular-timer-bg" cx="90" cy="90" r="82"></circle>
+          <circle class="circular-multiplier-progress" id="multiplierProgress" cx="90" cy="90" r="82" 
+                  stroke-dasharray="515" stroke-dashoffset="515"></circle>
+        </svg>
+        
+        <div class="timer-content" id="timerContent">
+          <div class="timer-value" id="timerValue">180</div>
+          <div class="timer-label" id="timerLabel">секунд</div>
+        </div>
+      </div>
+      
+      <div class="circular-timer" id="movesTimer" style="display:none;">
+        <svg viewBox="0 0 180 180">
+          <circle class="circular-timer-bg" cx="90" cy="90" r="82"></circle>
+        </svg>
+        
+        <div class="moves-content">
+          <div class="moves-value" id="movesValue">30</div>
+          <div class="moves-label">ходов</div>
+        </div>
+      </div>
+      
+      <div class="circular-timer" id="freezeTimer" style="display:none;">
+        <svg viewBox="0 0 180 180">
+          <circle class="circular-timer-bg" cx="90" cy="90" r="82"></circle>
+        </svg>
+        
+        <div class="freeze-content">
+          <div class="freeze-value" id="freezeMoveValue">3</div>
+          <div class="freeze-label">❄️</div>
+        </div>
+      </div>
+    </div>
+    
+    <canvas id="canvas" width="700" height="700"></canvas>
+  </div>
+
+  <div class="modal" id="gameOverModal">
+    <div class="modal-content">
+      <div class="modal-title" id="finalTitle">Игра завершена</div>
+      <div class="modal-subtitle" id="finalSubtitle">Ваш результат</div>
+      <div class="modal-score" id="finalScore">0</div>
+      <button class="modal-btn" id="playAgain">Играть снова</button>
+      <button class="modal-btn secondary" id="backToMenu">В меню</button>
+    </div>
+  </div>
+
+  <div class="modal" id="pauseModal">
+    <div class="modal-content">
+      <div class="modal-title">Пауза</div>
+      <div class="modal-subtitle">Игра приостановлена</div>
+      <div class="pause-buttons">
+        <button class="modal-btn" id="resumeGame">Продолжить</button>
+        <button class="modal-btn secondary" id="restartGame">Заново</button>
+        <button class="modal-btn secondary" id="exitGame">В меню</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal profile-modal" id="profileModal">
+    <div class="modal-content">
+      <!-- Секция для авторизованных пользователей -->
+      <div id="profileAuthenticated">
+        <div class="profile-header">
+          <div class="avatar-picker" id="avatarDisplay"></div>
+          <div class="profile-info">
+            <div class="profile-nickname">
+              <span id="nicknameDisplay">Игрок</span>
+              <button class="edit-nickname-btn" id="editNicknameBtn">✏️</button>
+            </div>
+            <div class="profile-id">ID: <span id="playerIdDisplay"></span></div>
+            <div class="profile-bubbles">
+              🫧 <span id="bubblesCount">0</span> пупырок
+            </div>
+          </div>
+        </div>
+        
+        <div class="profile-section" id="editNicknameSection" style="display:none;">
+          <div class="input-group">
+            <label class="input-label">Новый никнейм</label>
+            <input type="text" class="input-field" id="nicknameInput" maxlength="20" placeholder="Введите никнейм">
+          </div>
+          <button class="modal-btn" id="saveNicknameBtn">Сохранить</button>
+          <button class="modal-btn secondary" id="cancelNicknameBtn">Отмена</button>
+        </div>
+        
+        <div class="profile-section" id="avatarSection" style="display:none;">
+          <div class="section-title">Выберите аватар</div>
+          <div class="avatar-grid" id="avatarGrid"></div>
+        </div>
+        
+        <!-- Статистика -->
+        <div class="profile-section">
+          <div class="section-title">📊 Статистика</div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value" id="totalGamesDisplay">0</div>
+              <div class="stat-label">Игр</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="totalDotsDisplay">0</div>
+              <div class="stat-label">Точек</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="bestScoreDisplay">0</div>
+              <div class="stat-label">Рекорд</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Лучшие результаты по режимам -->
+        <div class="profile-section">
+          <div class="section-title">🏆 Лучшие результаты</div>
+          <div class="best-scores-grid">
+            <div class="best-score-item">
+              <div class="best-score-mode">
+                <div class="best-score-mode-icon" style="background:linear-gradient(135deg, #ff6b6b, #ff8e53);">⚡</div>
+                <span>Спринт</span>
+              </div>
+              <div class="best-score-value" id="bestSprintScore">0</div>
+            </div>
+            <div class="best-score-item">
+              <div class="best-score-mode">
+                <div class="best-score-mode-icon" style="background:linear-gradient(135deg, #a29bfe, #6c5ce7);">🧘</div>
+                <span>Дзен</span>
+              </div>
+              <div class="best-score-value" id="bestZenScore">0</div>
+            </div>
+            <div class="best-score-item">
+              <div class="best-score-mode">
+                <div class="best-score-mode-icon" style="background:linear-gradient(135deg, #74b9ff, #0984e3);">❄️</div>
+                <span>Заморозка</span>
+              </div>
+              <div class="best-score-value" id="bestFreezeScore">0</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Социальные кнопки -->
+        <div class="profile-section">
+          <div class="social-buttons">
+            <button class="social-btn" id="friendsBtn">
+              <div class="social-btn-icon">👥</div>
+              <div class="social-btn-label">Друзья</div>
+              <div class="social-btn-value" id="friendsCount">0</div>
+            </button>
+            <button class="social-btn" id="leaderboardBtn">
+              <div class="social-btn-icon">🏅</div>
+              <div class="social-btn-label">Лидеры</div>
+              <div class="social-btn-value">ТОП</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Секция для неавторизованных пользователей -->
+      <div id="profileGuest" style="display:none;">
+        <div class="profile-header" style="justify-content:center;">
+          <div class="avatar-picker" id="guestAvatarDisplay" style="width:70px;height:70px;font-size:35px;"></div>
+        </div>
+        
+        <div class="profile-section" style="text-align:center;">
+          <div style="font-size:18px;font-weight:500;margin-bottom:8px;">Гость</div>
+          <p style="color:var(--text-light);font-size:13px;margin-bottom:15px;">
+            Войдите, чтобы сохранять прогресс и соревноваться с друзьями
+          </p>
+        </div>
+        
+        <!-- Статистика гостя -->
+        <div class="profile-section">
+          <div class="section-title">📊 Статистика</div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value" id="guestTotalGamesDisplay">0</div>
+              <div class="stat-label">Игр</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="guestTotalDotsDisplay">0</div>
+              <div class="stat-label">Точек</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="guestBestScoreDisplay">0</div>
+              <div class="stat-label">Рекорд</div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="modal-btn" id="showAuthFromProfile" style="margin-bottom:10px;">🔐 Войти / Регистрация</button>
+      </div>
+      
+      <button class="modal-btn secondary" id="rulesBtn" style="margin-bottom:8px;">📖 Правила игры</button>
+      <button class="modal-btn secondary" id="closeProfileBtn">Закрыть</button>
+    </div>
+  </div>
+  
+  <!-- Модалка таблицы лидеров -->
+  <div class="modal" id="leaderboardModal">
+    <div class="modal-content">
+      <div class="modal-title" style="font-size:24px;margin-bottom:20px;">🏅 Таблица лидеров</div>
+      
+      <div class="leaderboard-tabs">
+        <button class="leaderboard-tab active" data-mode="sprint">⚡ Спринт</button>
+        <button class="leaderboard-tab" data-mode="zen">🧘 Дзен</button>
+        <button class="leaderboard-tab" data-mode="freeze">❄️ Заморозка</button>
+      </div>
+      
+      <div class="leaderboard-list" id="leaderboardList">
+        <div class="leaderboard-item">
+          <div class="leaderboard-rank gold">1</div>
+          <div class="leaderboard-avatar" style="background:linear-gradient(135deg, #ff6b6b, #feca57);">🦊</div>
+          <div class="leaderboard-info">
+            <div class="leaderboard-name">ProPlayer</div>
+          </div>
+          <div class="leaderboard-score">12,450</div>
+        </div>
+        <div class="leaderboard-item">
+          <div class="leaderboard-rank silver">2</div>
+          <div class="leaderboard-avatar" style="background:linear-gradient(135deg, #a29bfe, #6c5ce7);">🐱</div>
+          <div class="leaderboard-info">
+            <div class="leaderboard-name">DotMaster</div>
+          </div>
+          <div class="leaderboard-score">11,200</div>
+        </div>
+        <div class="leaderboard-item">
+          <div class="leaderboard-rank bronze">3</div>
+          <div class="leaderboard-avatar" style="background:linear-gradient(135deg, #55efc4, #00b894);">🐸</div>
+          <div class="leaderboard-info">
+            <div class="leaderboard-name">GameKing</div>
+          </div>
+          <div class="leaderboard-score">10,800</div>
+        </div>
+        <div class="leaderboard-item current-user">
+          <div class="leaderboard-rank">42</div>
+          <div class="leaderboard-avatar" id="leaderboardUserAvatar" style="background:linear-gradient(135deg, #74b9ff, #0984e3);">😎</div>
+          <div class="leaderboard-info">
+            <div class="leaderboard-name" id="leaderboardUserName">Вы</div>
+          </div>
+          <div class="leaderboard-score" id="leaderboardUserScore">0</div>
+        </div>
+      </div>
+      
+      <button class="modal-btn secondary" id="closeLeaderboardBtn" style="margin-top:15px;">Закрыть</button>
+    </div>
+  </div>
+  
+  <!-- Модалка друзей -->
+  <div class="modal" id="friendsModal">
+    <div class="modal-content">
+      <div class="modal-title" style="font-size:24px;margin-bottom:20px;">👥 Друзья</div>
+      
+      <div class="profile-section">
+        <div class="input-group">
+          <label class="input-label">Добавить друга по ID</label>
+          <div style="display:flex;gap:8px;">
+            <input type="text" class="input-field" id="friendIdInput" placeholder="Введите ID друга" style="flex:1;">
+            <button class="modal-btn" id="addFriendBtn" style="padding:12px 20px;">➕</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="leaderboard-list" id="friendsList">
+        <div style="text-align:center;padding:30px;color:var(--text-light);">
+          <div style="font-size:40px;margin-bottom:10px;">👥</div>
+          <p>Пока нет друзей</p>
+          <p style="font-size:12px;margin-top:5px;">Добавьте друзей по их ID</p>
+        </div>
+      </div>
+      
+      <button class="modal-btn secondary" id="closeFriendsBtn" style="margin-top:15px;">Закрыть</button>
+    </div>
+  </div>
+
+  <div class="modal" id="authModal">
+    <div class="modal-content">
+      <div class="modal-title" id="authTitle">Вход</div>
+      <div class="modal-subtitle" id="authSubtitle">Войдите в свой аккаунт</div>
+      
+      <div id="loginForm">
+        <div class="input-group">
+          <label class="input-label">Email</label>
+          <input type="email" class="input-field" id="loginEmail" placeholder="your@email.com" required>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Пароль</label>
+          <input type="password" class="input-field" id="loginPassword" placeholder="Введите пароль" required>
+        </div>
+        <div id="authError" style="color:var(--dot1);font-size:14px;margin-bottom:15px;display:none;"></div>
+        <button class="modal-btn" id="loginBtn">Войти</button>
+        <button class="modal-btn secondary" id="showRegisterBtn">Нет аккаунта? Зарегистрироваться</button>
+      </div>
+      
+      <div id="registerForm" style="display:none;">
+        <div class="input-group">
+          <label class="input-label">Имя пользователя</label>
+          <input type="text" class="input-field" id="registerUsername" placeholder="Имя пользователя" maxlength="20" required>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Email</label>
+          <input type="email" class="input-field" id="registerEmail" placeholder="your@email.com" required>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Пароль</label>
+          <input type="password" class="input-field" id="registerPassword" placeholder="Минимум 6 символов" minlength="6" required>
+        </div>
+        <div id="registerError" style="color:var(--dot1);font-size:14px;margin-bottom:15px;display:none;"></div>
+        <button class="modal-btn" id="registerBtn">Зарегистрироваться</button>
+        <button class="modal-btn secondary" id="showLoginBtn">Уже есть аккаунт? Войти</button>
+      </div>
+      
+      <button class="modal-btn secondary" id="closeAuthBtn" style="margin-top:15px;">← Назад</button>
+    </div>
+  </div>
+
+  <div class="modal" id="rulesModal">
+    <div class="modal-content rules-content">
+      <div class="modal-title" style="font-size:36px;margin-bottom:30px;">📖 Правила игры</div>
+      
+      <div class="rules-section">
+        <h3>💡 Обучение</h3>
+        <p><strong>Очки:</strong> Соединяйте точки одного цвета, чтобы заработать очки. Чем длиннее цепочка — тем больше очков!</p>
+        <p><strong>Режим Спринт:</strong> У вас есть 3 минуты на максимум очков.</p>
+        <p><strong>Режим Дзен:</strong> У вас есть 30 ходов без ограничения по времени.</p>
+        <p><strong>Множитель x2:</strong> В режиме Спринт золотой круг заполняется при цепочках от 5 точек. Когда круг полный — ваши очки удваиваются!</p>
+      </div>
+      
+      <div class="rules-section">
+        <h3>🎮 Как играть</h3>
+        <p>Соединяйте соседние точки одного цвета, проводя по ним пальцем или мышкой. Чем длиннее цепочка — тем больше очков!</p>
+        <ul>
+          <li>Минимум <span class="highlight">2 точки</span> для создания цепочки</li>
+          <li>Точки должны быть <span class="highlight">соседними</span> (по вертикали, горизонтали или диагонали)</li>
+          <li>Цепочка из <span class="highlight">10+ точек</span> = взрыв доски и обновление всех точек 💥</li>
+          <li><span class="highlight">✨ Золотая точка</span> подходит к любому цвету, даёт +150 очков, но завершает цепочку!</li>
+          <li><span class="highlight">🖌️ Точка-художник</span> красит соседние точки в цвет цепочки!</li>
+        </ul>
+      </div>
+      
+      <div class="rules-section">
+        <h3>⚡ Режим "Спринт"</h3>
+        <p>Интенсивный режим на время. Набирайте максимум очков за 3 минуты!</p>
+        <ul>
+          <li><span class="warning">2 точки: -300 очков</span> (штраф!) ⚠️</li>
+          <li><span class="highlight">3-4 точки:</span> базовые очки, <span class="warning">сброс множитель</span></li>
+          <li><span class="highlight">5+ точек:</span> прогресс множитель x2</li>
+          <li><span class="highlight">10+ точек:</span> взрыв доски + максимальные очки 💥</li>
+        </ul>
+        <p style="margin-top:10px;">Стратегия: собирайте цепочки от 5 точек для множитель, избегайте коротких!</p>
+      </div>
+      
+      <div class="rules-section">
+        <h3>🧘 Режим "Дзен"</h3>
+        <p>Спокойный режим без таймера. У вас есть <span class="highlight">30 ходов</span>, чтобы набрать максимум очков!</p>
+        <ul>
+          <li>Нет ограничения по времени - думайте сколько угодно</li>
+          <li>Нет множитель и штрафов</li>
+          <li><span class="highlight">Все цепочки дают очки</span> (от 20 до 180+)</li>
+          <li><span class="highlight">10+ точек:</span> взрыв доски + максимальные очки 💥</li>
+          <li><span class="highlight">Бонус пупырки:</span></li>
+          <li style="padding-left:40px;">3500+ очков = 1🫧 пупырка</li>
+          <li style="padding-left:40px;">5500+ очков = 3🫧 пупырки</li>
+          <li style="padding-left:40px;">7500+ очков = 5🫧 пупырок</li>
+        </ul>
+        <p style="margin-top:10px;">Стратегия: играйте вдумчиво, планируйте длинные комбинации для максимального счёта!</p>
+      </div>
+      
+      <div class="rules-section">
+        <h3>❄️ Режим "Заморозка"</h3>
+        <p>Стратегический режим выживания. Не дайте полю замёрзнуть!</p>
+        <ul>
+          <li><span class="highlight">Прогрессия сложности:</span></li>
+          <li style="padding-left:40px;">0 - 10к очков: <span class="warning">1 ледяная точка</span> каждые 3 хода</li>
+          <li style="padding-left:40px;">10к - 20к очков: <span class="warning">2 ледяных точки</span> каждые 3 хода</li>
+          <li style="padding-left:40px;">20к - 30к очков: <span class="warning">3 ледяных точки</span> каждые 4 хода</li>
+          <li style="padding-left:40px;">30к - 40к очков: <span class="warning">4 ледяных точки</span> каждые 4 хода</li>
+          <li style="padding-left:40px;">40к+ очков: <span class="warning">5 ледяных точек</span> каждые 5 ходов</li>
+          <li><span class="highlight">Ледяные точки нельзя выбрать</span> — они заблокированы 🧊</li>
+          <li><span class="highlight">Цепочка 8+ точек</span> рядом со льдом — размораживает соседние 🔥</li>
+          <li><span class="highlight">Цепочка 10+ точек</span> — глобальное потепление! Весь лёд тает 🌡️</li>
+          <li><span class="highlight">✨ Золотая / 🖌️ Художник</span> — растапливают лёд в радиусе 2 клеток!</li>
+          <li><span class="warning">Игра заканчивается</span>, если не осталось доступных ходов</li>
+          <li><span class="highlight">Бонус пупырки:</span></li>
+          <li style="padding-left:40px;">20к+ очков = 1🫧 пупырка</li>
+          <li style="padding-left:40px;">30к+ очков = 3🫧 пупырки</li>
+          <li style="padding-left:40px;">40к+ очков = 5🫧 пупырок</li>
+        </ul>
+        <p style="margin-top:10px;">Стратегия: собирайте длинные цепочки, чтобы выжить на высоких уровнях!</p>
+      </div>
+      
+      <div class="rules-section">
+        <h3>🎨 Особые точки</h3>
+        <p><span class="highlight">✨ Золотая точка (8% шанс)</span> — мерцающая золотая точка. Подходит к любому цвету и добавляет +150 очков к цепочке! После золотой точки цепочка завершается — используйте её как финал!</p>
+        <p><span class="highlight">🖌️ Точка-художник (2% шанс)</span> — точка с белым пульсирующим свечением. При уничтожении в цепочке красит все 8 соседних точек в цвет цепочки!</p>
+      </div>
+      
+      <div class="rules-section">
+        <h3>🫧 Пупырки</h3>
+        <p>Соберите достаточно очков в режиме Дзен, чтобы получить пупырки! Пупырки сохраняются в вашем профиле.</p>
+        <ul>
+          <li><span class="highlight">3500+ очков</span> = 1🫧 пупырка</li>
+          <li><span class="highlight">5500+ очков</span> = 3🫧 пупырки</li>
+          <li><span class="highlight">7500+ очков</span> = 5🫧 пупырок</li>
+        </ul>
+        <p style="margin-top:10px;">Чем больше очков — тем больше пупырок!</p>
+      </div>
+      
+      <button class="modal-btn" id="closeRulesBtn">Понятно!</button>
+      <button class="modal-btn secondary" id="startTutorialBtn" style="margin-top:10px;">Показать обучение</button>
+    </div>
+  </div>
+
+<script>
+// ==================== API Configuration ====================
+const API_BASE_URL = 'https://doton-games.onrender.com';
+
+// ==================== ОПТИМИЗАЦИЯ #1: Конфигурация ====================
+const CONFIG = {
+  ROWS: 5,
+  COLS: 5,
+  DOT_RADIUS: 28,
+  GAP: 14,
+  ROUND_TIME: 60,
+  ENDLESS_TIME: 180,
+  ZEN_MOVES: 30,
+  TOTAL_ROUNDS: 3,
+  COLORS: ["#ea6b6b", "#ffa8a8", "#8b9bff", "#6ba89b"],
+  TOUCH_RADIUS_MULTIPLIER: 1.6,
+  MAX_PARTICLES: 400,
+  PARTICLE_POOL_SIZE: 500,
+  SPECIAL_DOTS: {
+    NORMAL: 0,
+    RAINBOW: 4,
+    PAINTER: 5,
+    FROZEN: 6  // Новый тип - замороженная точка
+  },
+  RAINBOW_CHANCE: 0.08,  // 8% шанс на золотую точку
+  PAINTER_CHANCE: 0.02,  // 2% шанс на точку-художника
+  // Freeze Mode Config
+  FREEZE: {
+    MOVES_BETWEEN_FROST: 3,     // Базовое: каждые 3 хода
+    DOTS_TO_FREEZE: 1,          // Базовое количество (1 точка)
+    CHAIN_TO_THAW: 8,           // Цепочка 8+ размораживает соседние
+    CHAIN_TO_GLOBAL_THAW: 10,   // Цепочка 10+ размораживает всё
+    SPECIAL_THAW_RADIUS: 2,     // Радиус размораживания для особых точек
+    // Пороги сложности: score, dotsToFreeze, movesBetween
+    DIFFICULTY_THRESHOLDS: [
+      { score: 0, dotsToFreeze: 1, movesBetween: 3 },      // Начало: 1 точка, 3 хода
+      { score: 10000, dotsToFreeze: 2, movesBetween: 3 },  // 10к+: 2 точки, 3 хода
+      { score: 20000, dotsToFreeze: 3, movesBetween: 4 },  // 20к+: 3 точки, 4 хода
+      { score: 30000, dotsToFreeze: 4, movesBetween: 4 },  // 30к+: 4 точки, 4 хода
+      { score: 40000, dotsToFreeze: 5, movesBetween: 5 }   // 40к+: 5 точек, 5 ходов
+    ],
+    // Награды пупырками за достижение порогов
+    BUBBLE_REWARDS: [
+      { score: 20000, bubbles: 1 },  // 20к+ = 1 пупырка
+      { score: 30000, bubbles: 3 },  // 30к+ = 3 пупырки
+      { score: 40000, bubbles: 5 }   // 40к+ = 5 пупырок
+    ]
+  }
+};
+
+const AVATARS = [
+  { emoji: '🎮', gradient: 'radial-gradient(circle, #6b7bf7, #5a6ad7)' },
+  { emoji: '🎯', gradient: 'radial-gradient(circle, #5ce1b8, #4bc9a0)' },
+  { emoji: '🎨', gradient: 'radial-gradient(circle, #ff5757, #e64545)' },
+  { emoji: '🎭', gradient: 'radial-gradient(circle, #ffd5a3, #ffca8f)' },
+  { emoji: '🎪', gradient: 'radial-gradient(circle, #ff6b9d, #ff5689)' },
+  { emoji: '🎬', gradient: 'radial-gradient(circle, #d896ff, #c77fff)' },
+  { emoji: '🎸', gradient: 'radial-gradient(circle, #5eb8ff, #4aa3e6)' },
+  { emoji: '🎤', gradient: 'radial-gradient(circle, #ea6b6b, #d85a5a)' },
+  { emoji: '🎧', gradient: 'radial-gradient(circle, #8b9bff, #7a8aee)' },
+  { emoji: '🎹', gradient: 'radial-gradient(circle, #6ba89b, #5c9488)' }
+];
+
+const ENDLESS_SCORING = {
+  2: { points: -300 },
+  3: { points: 50 },
+  4: { points: 70 },
+  5: { points: 90 },
+  6: { points: 110 },
+  7: { points: 130 },
+  8: { points: 150 },
+  9: { points: 170 }
+};
+
+const ZEN_SCORING = {
+  2: { points: 20 },
+  3: { points: 40 },
+  4: { points: 60 },
+  5: { points: 80 },
+  6: { points: 100 },
+  7: { points: 120 },
+  8: { points: 140 },
+  9: { points: 160 }
+};
+
+// Система очков для режима Freeze (Заморозка)
+const FREEZE_SCORING = {
+  2: { points: 15 },
+  3: { points: 30 },
+  4: { points: 50 },
+  5: { points: 75 },
+  6: { points: 100 },
+  7: { points: 130 },
+  8: { points: 170, thaw: true },  // Размораживает соседние
+  9: { points: 210, thaw: true }
+};
+
+function calculateScore(chainLength, isEndless = false, isZen = false, isFreeze = false) {
+  // Режим Freeze (Заморозка)
+  if (isFreeze) {
+    if (chainLength < 10) {
+      const scoring = FREEZE_SCORING[chainLength] || FREEZE_SCORING[2];
+      return {
+        points: scoring.points,
+        thaw: chainLength >= CONFIG.FREEZE.CHAIN_TO_THAW
+      };
+    }
+    // 10+ точек = глобальное потепление
+    return { 
+      points: 250 + (chainLength - 10) * 30, 
+      explosion: true,
+      globalThaw: true
+    };
+  }
+  
+  if (isZen) {
+    if (chainLength < 10) {
+      return ZEN_SCORING[chainLength] || ZEN_SCORING[2];
+    }
+    return { points: 180 + (chainLength - 10) * 20, explosion: true };
+  }
+  
+  if (isEndless) {
+    if (chainLength < 10) {
+      return ENDLESS_SCORING[chainLength] || ENDLESS_SCORING[4];
+    }
+    if (chainLength === 10) return { points: 200, explosion: true };
+    if (chainLength === 11) return { points: 220, explosion: true };
+    if (chainLength === 12) return { points: 240, explosion: true };
+    if (chainLength === 13) return { points: 260, explosion: true };
+    if (chainLength === 14) return { points: 280, explosion: true };
+    if (chainLength >= 15) return { points: 300 + (chainLength - 15) * 20, explosion: true };
+  }
+  
+  return { points: 0 };
+}
+
+// ==================== ОПТИМИЗАЦИЯ #2: Менеджер аудио (F Lydian + Sine) ====================
+class AudioManager {
+  constructor() {
+    this.context = null;
+    this.enabled = true;
+    this.convolver = null;
+    this.reverbGain = null;
+    
+    // Лидийский лад (F Lydian) - F3–E6
+    // F – G – A – B – C – D – E (повышенная 4-я ступень)
+    this.majorScale = [
+      174.61, // F3 (0)
+      196.00, // G3 (1)
+      220.00, // A3 (2)
+      246.94, // B3 (3) - характерная повышенная 4-я ступень Лидийского лада
+      261.63, // C4 (4)
+      293.66, // D4 (5)
+      329.63, // E4 (6)
+      349.23, // F4 (7)
+      392.00, // G4 (8)
+      440.00, // A4 (9)
+      493.88, // B4 (10)
+      523.25, // C5 (11)
+      587.33, // D5 (12)
+      659.25, // E5 (13)
+      698.46, // F5 (14)
+      783.99, // G5 (15)
+      880.00, // A5 (16)
+      987.77, // B5 (17)
+      1046.50, // C6 (18)
+      1174.66, // D6 (19)
+      1318.51  // E6 (20)
+    ];
+  }
+  
+  init() {
+    if (!this.context && this.enabled) {
+      try {
+        this.context = new (window.AudioContext || window.webkitAudioContext)();
+        
+        // Создаём reverb через convolver
+        this.convolver = this.context.createConvolver();
+        this.reverbGain = this.context.createGain();
+        this.reverbGain.gain.value = 0.35; // Громкость реверба
+        
+        // Генерируем импульс для лёгкого атмосферного reverb
+        this.createReverbImpulse(1.5, 2.5); // decay, duration
+        
+        this.convolver.connect(this.reverbGain);
+        this.reverbGain.connect(this.context.destination);
+        
+      } catch (e) {
+        console.warn('AudioContext not supported:', e);
+        this.enabled = false;
+      }
+    }
+    if (this.context && this.context.state === 'suspended') {
+      this.context.resume();
+    }
+  }
+  
+  createReverbImpulse(decay, duration) {
+    const sampleRate = this.context.sampleRate;
+    const length = sampleRate * duration;
+    const impulse = this.context.createBuffer(2, length, sampleRate);
+    
+    for (let channel = 0; channel < 2; channel++) {
+      const channelData = impulse.getChannelData(channel);
+      for (let i = 0; i < length; i++) {
+        // Экспоненциальное затухание с шумом
+        const envelope = Math.pow(1 - i / length, decay);
+        channelData[i] = (Math.random() * 2 - 1) * envelope;
+      }
+    }
+    
+    this.convolver.buffer = impulse;
+  }
+  
+  // Играть ноту из Лидийского лада по индексу
+  playNote(noteIndex, duration, type = 'sine', volume = 0.02, useReverb = true) {
+    const index = Math.max(0, Math.min(noteIndex, this.majorScale.length - 1));
+    this.play(this.majorScale[index], duration, type, volume, useReverb);
+  }
+  
+  play(frequency, duration, type = 'sine', volume = 0.02, useReverb = true) {
+    if (!this.enabled || !this.context) return;
+    
+    try {
+      const oscillator = this.context.createOscillator();
+      const gain = this.context.createGain();
+      
+      oscillator.connect(gain);
+      gain.connect(this.context.destination);
+      
+      // Подключаем к reverb если нужно
+      if (useReverb && this.convolver) {
+        gain.connect(this.convolver);
+      }
+      
+      oscillator.frequency.value = frequency;
+      oscillator.type = type;
+      
+      gain.gain.setValueAtTime(volume, this.context.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, this.context.currentTime + duration);
+      
+      oscillator.start(this.context.currentTime);
+      oscillator.stop(this.context.currentTime + duration);
+    } catch (e) {
+      console.warn('Audio playback error:', e);
+    }
+  }
+  
+  cleanup() {
+    if (this.context) {
+      this.context.close();
+      this.context = null;
+    }
+  }
+}
+
+const audioManager = new AudioManager();
+
+// ==================== ОПТИМИЗАЦИЯ #3: Object Pool для частиц ====================
+class Particle {
+  constructor() {
+    this.reset(0, 0, 0, 0, 0, 0, 0);
+  }
+  
+  reset(x, y, vx, vy, r, g, b) {
+    this.x = x;
+    this.y = y;
+    this.vx = vx;
+    this.vy = vy;
+    this.r = r;
+    this.g = g;
+    this.b = b;
+    this.life = 1;
+    this.size = Math.random() * 3 + 2;
+    this.active = true;
+  }
+  
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+    this.vy += 0.15;
+    this.life -= 0.02;
+    this.size *= 0.98;
+    
+    if (this.life <= 0) {
+      this.active = false;
+    }
+  }
+}
+
+class ParticlePool {
+  constructor(size) {
+    this.pool = [];
+    for (let i = 0; i < size; i++) {
+      this.pool.push(new Particle());
+    }
+    this.active = [];
+  }
+  
+  get(x, y, vx, vy, r, g, b) {
+    let particle = null;
+    for (let i = 0; i < this.pool.length; i++) {
+      if (!this.pool[i].active) {
+        particle = this.pool[i];
+        break;
+      }
+    }
+    
+    if (!particle) {
+      particle = this.active.shift();
+      if (!particle) return null;
+    }
+    
+    particle.reset(x, y, vx, vy, r, g, b);
+    this.active.push(particle);
+    
+    if (this.active.length > CONFIG.MAX_PARTICLES) {
+      const removed = this.active.shift();
+      if (removed) removed.active = false;
+    }
+    
+    return particle;
+  }
+  
+  update() {
+    this.active = this.active.filter(p => {
+      p.update();
+      return p.active;
+    });
+  }
+  
+  getActive() {
+    return this.active;
+  }
+  
+  clear() {
+    this.active.forEach(p => p.active = false);
+    this.active = [];
+  }
+}
+
+// ==================== API Service ====================
+class ApiService {
+  constructor(baseUrl) {
+    this.baseUrl = baseUrl;
+  }
+
+  getToken() {
+    return localStorage.getItem('authToken');
+  }
+
+  setToken(token) {
+    if (token) {
+      localStorage.setItem('authToken', token);
+    } else {
+      localStorage.removeItem('authToken');
+    }
+  }
+
+  async request(endpoint, options = {}) {
+    const token = this.getToken();
+    const headers = {
+      'Content-Type': 'application/json',
+      ...options.headers
+    };
+
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+
+    try {
+      const response = await fetch(`${this.baseUrl}${endpoint}`, {
+        ...options,
+        headers
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Request failed');
+      }
+
+      return data;
+    } catch (error) {
+      console.error('API request error:', error);
+      throw error;
+    }
+  }
+
+  async register(username, email, password) {
+    return this.request('/api/register', {
+      method: 'POST',
+      body: JSON.stringify({ username, email, password })
+    });
+  }
+
+  async login(email, password) {
+    return this.request('/api/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password })
+    });
+  }
+
+  async getProfile() {
+    return this.request('/api/profile');
+  }
+
+  async updateProfile(data) {
+    return this.request('/api/profile', {
+      method: 'PUT',
+      body: JSON.stringify(data)
+    });
+  }
+
+  async updateStats(score, bubbles, hasSeenOnboarding) {
+    return this.request('/api/stats', {
+      method: 'PUT',
+      body: JSON.stringify({ score, bubbles, hasSeenOnboarding })
+    });
+  }
+}
+
+const apiService = new ApiService(API_BASE_URL);
+
+// ==================== ОПТИМИЗАЦИЯ #4: Профиль игрока ====================
+class PlayerProfile {
+  constructor() {
+    this.id = '';
+    this.username = '';
+    this.email = '';
+    this.nickname = '';
+    this.avatar = 0;
+    this.bubbles = 0;
+    this.bestScore = 0;
+    this.totalGames = 0;
+    this.totalDots = 0;
+    this.bestSprintScore = 0;
+    this.bestZenScore = 0;
+    this.bestFreezeScore = 0;
+    this.friends = [];
+    this.hasSeenOnboarding = false;
+    this.isAuthenticated = false;
+    this.loadProfile();
+  }
+  
+  async loadProfile() {
+    const token = apiService.getToken();
+    if (!token) {
+      this.loadLocalProfile();
+      return;
+    }
+
+    try {
+      const user = await apiService.getProfile();
+      this.id = user.id;
+      this.username = user.username;
+      this.email = user.email;
+      this.nickname = user.nickname || user.username;
+      this.avatar = user.avatar || 0;
+      this.bubbles = user.bubbles || 0;
+      this.bestScore = user.bestScore || 0;
+      this.totalGames = user.totalGames || 0;
+      this.totalDots = user.totalDots || 0;
+      this.bestSprintScore = user.bestSprintScore || 0;
+      this.bestZenScore = user.bestZenScore || 0;
+      this.bestFreezeScore = user.bestFreezeScore || 0;
+      this.friends = user.friends || [];
+      this.hasSeenOnboarding = user.hasSeenOnboarding || false;
+      this.isAuthenticated = true;
+      this.updateUI();
+    } catch (error) {
+      console.warn('Failed to load profile from server:', error);
+      this.loadLocalProfile();
+    }
+  }
+
+  loadLocalProfile() {
+    try {
+      const saved = localStorage.getItem('dotsProfile');
+      if (saved) {
+        const data = JSON.parse(saved);
+        this.id = data.id || this.generateId();
+        this.nickname = data.nickname || 'Игрок' + Math.floor(Math.random() * 1000);
+        this.avatar = data.avatar || 0;
+        this.bubbles = data.bubbles || 0;
+        this.bestScore = data.bestScore || 0;
+        this.totalGames = data.totalGames || 0;
+        this.totalDots = data.totalDots || 0;
+        this.bestSprintScore = data.bestSprintScore || 0;
+        this.bestZenScore = data.bestZenScore || 0;
+        this.bestFreezeScore = data.bestFreezeScore || 0;
+        this.friends = data.friends || [];
+        this.hasSeenOnboarding = data.hasSeenOnboarding || false;
+      } else {
+        this.id = this.generateId();
+        this.nickname = 'Игрок' + Math.floor(Math.random() * 1000);
+      }
+      this.isAuthenticated = false;
+      this.updateUI();
+    } catch (e) {
+      console.warn('Failed to load local profile:', e);
+      this.id = this.generateId();
+      this.nickname = 'Игрок' + Math.floor(Math.random() * 1000);
+      this.updateUI();
+    }
+  }
+
+  generateId() {
+    return 'DOT' + Math.random().toString(36).substring(2, 11).toUpperCase();
+  }
+
+  async saveProfile() {
+    if (!this.isAuthenticated) {
+      this.saveLocalProfile();
+      return;
+    }
+
+    try {
+      await apiService.updateProfile({
+        nickname: this.nickname,
+        avatar: this.avatar
+      });
+    } catch (error) {
+      console.warn('Failed to save profile to server:', error);
+      this.saveLocalProfile();
+    }
+  }
+
+  saveLocalProfile() {
+    try {
+      const data = JSON.stringify({
+        id: this.id,
+        nickname: this.nickname,
+        avatar: this.avatar,
+        bubbles: this.bubbles,
+        bestScore: this.bestScore,
+        totalGames: this.totalGames,
+        totalDots: this.totalDots,
+        bestSprintScore: this.bestSprintScore,
+        bestZenScore: this.bestZenScore,
+        bestFreezeScore: this.bestFreezeScore,
+        friends: this.friends,
+        hasSeenOnboarding: this.hasSeenOnboarding
+      });
+      localStorage.setItem('dotsProfile', data);
+    } catch (e) {
+      console.warn('Failed to save local profile:', e);
+    }
+  }
+  
+  // Обновить лучший результат по режиму
+  async updateModeScore(mode, score) {
+    let updated = false;
+    
+    if (mode === 'endless' && score > this.bestSprintScore) {
+      this.bestSprintScore = score;
+      updated = true;
+    } else if (mode === 'zen' && score > this.bestZenScore) {
+      this.bestZenScore = score;
+      updated = true;
+    } else if (mode === 'freeze' && score > this.bestFreezeScore) {
+      this.bestFreezeScore = score;
+      updated = true;
+    }
+    
+    if (updated) {
+      this.saveLocalProfile();
+    }
+    
+    return updated;
+  }
+  
+  // Добавить собранные точки
+  addDots(count) {
+    this.totalDots += count;
+    this.saveLocalProfile();
+  }
+  
+  // Форматировать число
+  formatNumber(num) {
+    if (num >= 1000000) {
+      return (num / 1000000).toFixed(1) + 'M';
+    } else if (num >= 1000) {
+      return (num / 1000).toFixed(1) + 'K';
+    }
+    return num.toString();
+  }
+
+  async markOnboardingSeen() {
+    this.hasSeenOnboarding = true;
+    if (this.isAuthenticated) {
+      try {
+        await apiService.updateStats(0, 0, true);
+      } catch (error) {
+        console.warn('Failed to update onboarding status:', error);
+      }
+    }
+    this.saveProfile();
+  }
+
+  async updateBestScore(score) {
+    if (score > this.bestScore) {
+      this.bestScore = score;
+      if (this.isAuthenticated) {
+        try {
+          await apiService.updateStats(score, 0, this.hasSeenOnboarding);
+        } catch (error) {
+          console.warn('Failed to update best score:', error);
+        }
+      }
+      this.saveProfile();
+      return true;
+    }
+    return false;
+  }
+
+  async incrementGames() {
+    this.totalGames++;
+    if (this.isAuthenticated) {
+      try {
+        await apiService.updateStats(this.bestScore, 0, this.hasSeenOnboarding);
+      } catch (error) {
+        console.warn('Failed to update games count:', error);
+      }
+    }
+    this.saveProfile();
+  }
+
+  async addBubbles(amount) {
+    this.bubbles += amount;
+    if (this.isAuthenticated) {
+      try {
+        await apiService.updateStats(this.bestScore, amount, this.hasSeenOnboarding);
+      } catch (error) {
+        console.warn('Failed to update bubbles:', error);
+      }
+    }
+    this.saveProfile();
+    this.updateUI();
+  }
+
+  async login(email, password) {
+    try {
+      const result = await apiService.login(email, password);
+      apiService.setToken(result.token);
+      this.id = result.user.id;
+      this.username = result.user.username;
+      this.email = result.user.email;
+      this.nickname = result.user.nickname || result.user.username;
+      this.avatar = result.user.avatar || 0;
+      this.bubbles = result.user.bubbles || 0;
+      this.bestScore = result.user.bestScore || 0;
+      this.totalGames = result.user.totalGames || 0;
+      this.hasSeenOnboarding = result.user.hasSeenOnboarding || false;
+      this.isAuthenticated = true;
+      this.updateUI();
+      return { success: true };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
+  }
+
+  async register(username, email, password) {
+    try {
+      const result = await apiService.register(username, email, password);
+      apiService.setToken(result.token);
+      this.id = result.user.id;
+      this.username = result.user.username;
+      this.email = result.user.email;
+      this.nickname = result.user.nickname || result.user.username;
+      this.avatar = result.user.avatar || 0;
+      this.bubbles = result.user.bubbles || 0;
+      this.bestScore = result.user.bestScore || 0;
+      this.totalGames = result.user.totalGames || 0;
+      this.hasSeenOnboarding = result.user.hasSeenOnboarding || false;
+      this.isAuthenticated = true;
+      this.updateUI();
+      return { success: true };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
+  }
+
+  logout() {
+    apiService.setToken(null);
+    this.isAuthenticated = false;
+    this.loadLocalProfile();
+  }
+
+  updateUI() {
+    const nicknameEl = document.getElementById('nicknameDisplay');
+    const idEl = document.getElementById('playerIdDisplay');
+    const bubblesEl = document.getElementById('bubblesCount');
+    const bestScoreEl = document.getElementById('bestScoreDisplay');
+    const totalGamesEl = document.getElementById('totalGamesDisplay');
+    
+    if (nicknameEl) nicknameEl.textContent = this.nickname;
+    if (idEl) idEl.textContent = this.isAuthenticated ? this.username : this.id;
+    if (bubblesEl) bubblesEl.textContent = this.bubbles;
+    if (bestScoreEl) bestScoreEl.textContent = this.bestScore;
+    if (totalGamesEl) totalGamesEl.textContent = this.totalGames;
+    
+    const avatarData = AVATARS[this.avatar];
+    const avatarEl = document.getElementById('avatarDisplay');
+    if (avatarEl && avatarData) {
+      avatarEl.textContent = avatarData.emoji;
+      avatarEl.style.background = avatarData.gradient;
+    }
+  }
+}
+
+const profile = new PlayerProfile();
+
+// ==================== ОПТИМИЗАЦИЯ #5: Состояние игры ====================
+class GameState {
+  constructor() {
+    this.timeLeft = CONFIG.ROUND_TIME;
+    this.score = 0;
+    this.timerInterval = null;
+    this.animationId = null;
+    this.gameComplete = false;
+    this.comboElements = new Set();
+    this.gameMode = 'endless';
+    this.isPaused = false;
+    this.multiplier = 1;
+    this.multiplierProgress = 0;
+    this.lastChainTime = 0;
+    this.multiplierDecayInterval = null;
+    this.movesLeft = 0;
+    
+    // Freeze Mode properties
+    this.freezeMoveCounter = 0;      // Счётчик ходов до мороза
+    this.frozenDots = new Set();     // Множество замороженных точек
+    this.totalMoves = 0;             // Общее количество ходов
+  }
+  
+  reset() {
+    this.timeLeft = CONFIG.ROUND_TIME;
+    this.score = 0;
+    this.gameComplete = false;
+    this.isPaused = false;
+    this.multiplier = 1;
+    this.multiplierProgress = 0;
+    this.lastChainTime = 0;
+    this.movesLeft = 0;
+    this.clearComboElements();
+    this.stopMultiplierDecay();
+    
+    // Reset Freeze Mode
+    this.freezeMoveCounter = 0;
+    this.frozenDots.clear();
+    this.totalMoves = 0;
+    this.updateFreezeUI();
+  }
+  
+  // Методы для режима Freeze
+  incrementFreezeMove() {
+    this.freezeMoveCounter++;
+    this.totalMoves++;
+    this.updateFreezeUI();
+    
+    const movesBetween = typeof getMovesBetweenFrost === 'function' ? getMovesBetweenFrost() : CONFIG.FREEZE.MOVES_BETWEEN_FROST;
+    
+    if (this.freezeMoveCounter >= movesBetween) {
+      this.freezeMoveCounter = 0;
+      return true; // Нужно заморозить точки
+    }
+    return false;
+  }
+  
+  updateFreezeUI() {
+    const movesBetween = typeof getMovesBetweenFrost === 'function' ? getMovesBetweenFrost() : CONFIG.FREEZE.MOVES_BETWEEN_FROST;
+    const movesUntilFrost = movesBetween - this.freezeMoveCounter;
+    
+    const freezeValueEl = document.getElementById('freezeMoveValue');
+    if (freezeValueEl) {
+      freezeValueEl.textContent = movesUntilFrost;
+    }
+  }
+  
+  addFrozenDot(r, c) {
+    this.frozenDots.add(`${r},${c}`);
+    this.updateFreezeUI();
+  }
+  
+  removeFrozenDot(r, c) {
+    this.frozenDots.delete(`${r},${c}`);
+    this.updateFreezeUI();
+  }
+  
+  clearAllFrozenDots() {
+    this.frozenDots.clear();
+    this.updateFreezeUI();
+  }
+  
+  isFrozen(r, c) {
+    return this.frozenDots.has(`${r},${c}`);
+  }
+  
+  pause() {
+    if (!this.gameComplete && !this.isPaused) {
+      this.isPaused = true;
+      clearInterval(this.timerInterval);
+      this.stopMultiplierDecay();
+      if (this.animationId) {
+        cancelAnimationFrame(this.animationId);
+      }
+      document.getElementById('pauseModal').style.display = 'flex';
+    }
+  }
+  
+  resume() {
+    if (this.isPaused) {
+      this.isPaused = false;
+      document.getElementById('pauseModal').style.display = 'none';
+      startTimer();
+      this.startMultiplierDecay();
+      loop();
+    }
+  }
+  
+  addMultiplierProgress(chainLength) {
+    if (chainLength < 5) {
+      this.multiplierProgress = 0;
+      this.multiplier = 1;
+      this.updateMultiplierUI();
+      return;
+    }
+    
+    const baseIncrease = 35;
+    const bonusIncrease = (chainLength - 5) * 8;
+    const totalIncrease = baseIncrease + bonusIncrease;
+    
+    this.multiplierProgress = Math.min(100, this.multiplierProgress + totalIncrease);
+    this.lastChainTime = Date.now();
+    
+    if (this.multiplierProgress >= 100) {
+      this.multiplier = 2;
+      this.multiplierProgress = 100;
+      if (navigator.vibrate) navigator.vibrate([40, 20, 40]);
+    }
+    
+    this.updateMultiplierUI();
+  }
+  
+  updateMultiplierUI() {
+    const multiplierCircle = document.getElementById('multiplierProgress');
+    
+    const circumference = 515;
+    const offset = circumference - (this.multiplierProgress / 100) * circumference;
+    
+    if (multiplierCircle) {
+      multiplierCircle.style.strokeDashoffset = offset;
+    }
+  }
+  
+  startMultiplierDecay() {
+    this.stopMultiplierDecay();
+    this.multiplierDecayInterval = setInterval(() => {
+      if (this.isPaused || this.gameComplete) return;
+      
+      const timeSinceLastChain = Date.now() - this.lastChainTime;
+      if (timeSinceLastChain > 1000) {
+        this.multiplierProgress = Math.max(0, this.multiplierProgress - 2);
+        
+        if (this.multiplierProgress < 100) {
+          this.multiplier = 1;
+        }
+        
+        this.updateMultiplierUI();
+      }
+    }, 100);
+  }
+  
+  stopMultiplierDecay() {
+    if (this.multiplierDecayInterval) {
+      clearInterval(this.multiplierDecayInterval);
+      this.multiplierDecayInterval = null;
+    }
+  }
+  
+  clearComboElements() {
+    this.comboElements.forEach(el => {
+      if (el && el.parentNode) {
+        el.parentNode.removeChild(el);
+      }
+    });
+    this.comboElements.clear();
+  }
+}
+
+const gameState = new GameState();
+
+// ==================== ОПТИМИЗАЦИЯ #6: Игрок с оптимизированной отрисовкой ====================
+class Player {
+  constructor() {
+    this.grid = [];
+    this.chain = [];
+    this.chainSet = new Set();
+    this.dragging = false;
+    this.lastPos = null;
+    this.particlePool = new ParticlePool(CONFIG.PARTICLE_POOL_SIZE);
+    this.canvas = null;
+    this.ctx = null;
+    this.layoutCache = null;
+    this.eventListeners = [];
+    this.colorRGB = {};
+    this.colorRGB = {};
+    this.animatingDots = [];
+    this.rainbowHue = 0; // Для анимации радужной точки
+    this.painterPulse = 0; // Для анимации точки-художника
+  }
+  
+  initCanvas() {
+    this.canvas = document.getElementById('canvas');
+    this.ctx = this.canvas.getContext('2d', { alpha: false });
+    this.updateLayoutCache();
+    this.cacheColorRGB();
+  }
+  
+  cacheColorRGB() {
+    CONFIG.COLORS.forEach(color => {
+      this.colorRGB[color] = this.hex2rgb(color);
+    });
+    // Добавляем RGB для особых точек
+    this.colorRGB['#ffffff'] = this.hex2rgb('#ffffff');
+  }
+  
+  updateLayoutCache() {
+    const padding = CONFIG.DOT_RADIUS + 10;
+    const totalWidth = CONFIG.COLS * CONFIG.DOT_RADIUS * 2 + (CONFIG.COLS - 1) * CONFIG.GAP;
+    const startX = (this.canvas.width - totalWidth) / 2 + CONFIG.DOT_RADIUS;
+    const startY = (this.canvas.height - totalWidth) / 2 + CONFIG.DOT_RADIUS;
+    
+    this.layoutCache = [];
+    for (let r = 0; r < CONFIG.ROWS; r++) {
+      const row = [];
+      for (let c = 0; c < CONFIG.COLS; c++) {
+        row.push({
+          x: startX + c * (CONFIG.DOT_RADIUS * 2 + CONFIG.GAP),
+          y: startY + r * (CONFIG.DOT_RADIUS * 2 + CONFIG.GAP)
+        });
+      }
+      this.layoutCache.push(row);
+    }
+  }
+  
+  reset() {
+    this.chain = [];
+    this.chainSet.clear();
+    this.particlePool.clear();
+    this.dragging = false;
+    this.lastPos = null;
+    this.animatingDots = [];
+    this.rainbowHue = 0;
+    this.painterPulse = 0;
+  }
+  
+  animateDot(r, c, isExplosion = false) {
+    this.animatingDots.push({
+      r, c,
+      scale: isExplosion ? 1.5 : 0.3,
+      opacity: isExplosion ? 1 : 0,
+      targetScale: isExplosion ? 0 : 1,
+      targetOpacity: isExplosion ? 0 : 1,
+      speed: isExplosion ? 0.25 : 0.22,
+      isExplosion
+    });
+  }
+  
+  updateAnimations() {
+    this.animatingDots = this.animatingDots.filter(anim => {
+      anim.scale += (anim.targetScale - anim.scale) * anim.speed;
+      anim.opacity += (anim.targetOpacity - anim.opacity) * anim.speed;
+      
+      const scaleDiff = Math.abs(anim.targetScale - anim.scale);
+      const opacityDiff = Math.abs(anim.targetOpacity - anim.opacity);
+      
+      return scaleDiff > 0.01 || opacityDiff > 0.01;
+    });
+    
+    // Обновляем анимацию радужной точки (медленнее и спокойнее)
+    this.rainbowHue = (this.rainbowHue + 0.5) % 360;
+    
+    // Обновляем анимацию точки-художника (пульсация)
+    this.painterPulse = (this.painterPulse + 0.03) % (Math.PI * 2);
+  }
+  
+  addParticle(x, y, color, count = 15) {
+    const currentCount = this.particlePool.getActive().length;
+    if (currentCount >= CONFIG.MAX_PARTICLES) {
+      count = Math.min(count, Math.floor(count / 2));
+    }
+    
+    const rgb = this.colorRGB[color];
+    if (!rgb) return;
+    
+    for (let i = 0; i < count; i++) {
+      const vx = (Math.random() - 0.5) * 3;
+      const vy = (Math.random() - 0.5) * 3 - 1;
+      this.particlePool.get(
+        x + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+        y + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+        vx, vy, rgb[0], rgb[1], rgb[2]
+      );
+    }
+  }
+  
+  removeEventListeners() {
+    this.eventListeners.forEach(({element, event, handler}) => {
+      element.removeEventListener(event, handler);
+    });
+    this.eventListeners = [];
+  }
+  
+  addEventListener(element, event, handler) {
+    element.addEventListener(event, handler);
+    this.eventListeners.push({element, event, handler});
+  }
+  
+  hex2rgb(hex) {
+    const v = parseInt(hex.slice(1), 16);
+    return [v >> 16 & 255, v >> 8 & 255, v & 255];
+  }
+  
+  // Функция для отрисовки особых точек
+  drawSpecialDot(ctx, x, y, radius, opacity, dotType) {
+    if (dotType === CONFIG.SPECIAL_DOTS.RAINBOW) {
+      // Золотая точка без внутреннего мерцания, только свечение по краям
+      const gradient = ctx.createRadialGradient(x, y, radius * 0.3, x, y, radius);
+      
+      // Статичные персиковые/золотистые оттенки без анимации яркости
+      gradient.addColorStop(0, `rgba(255, 230, 200, ${opacity})`); // Светлый центр
+      gradient.addColorStop(0.4, `rgba(255, 207, 168, ${opacity})`); // Основной цвет #FFCFA8
+      gradient.addColorStop(0.7, `rgba(230, 180, 140, ${opacity})`); // Темнее
+      gradient.addColorStop(1, `rgba(200, 150, 110, ${opacity * 0.9})`); // Края
+      
+      ctx.fillStyle = gradient;
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Пульсирующее свечение только по краям
+      const pulseValue = Math.sin(this.rainbowHue * Math.PI / 180) * 0.3 + 0.7; // От 0.4 до 1.0
+      
+      ctx.shadowBlur = 15 * opacity * pulseValue;
+      ctx.shadowColor = `rgba(255, 207, 168, ${opacity * pulseValue * 0.6})`;
+      
+      // Внешнее свечение (только по краям)
+      const glowGradient = ctx.createRadialGradient(x, y, radius * 0.8, x, y, radius * 1.4);
+      glowGradient.addColorStop(0, `rgba(255, 207, 168, 0)`); // Прозрачный внутри
+      glowGradient.addColorStop(0.5, `rgba(255, 207, 168, ${opacity * pulseValue * 0.3})`);
+      glowGradient.addColorStop(1, `rgba(255, 207, 168, 0)`); // Прозрачный снаружи
+      
+      ctx.fillStyle = glowGradient;
+      ctx.beginPath();
+      ctx.arc(x, y, radius * 1.4, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      
+      // Статичные блики (без анимации)
+      const highlight = ctx.createRadialGradient(
+        x - radius * 0.3, 
+        y - radius * 0.3, 
+        0, 
+        x - radius * 0.3, 
+        y - radius * 0.3, 
+        radius * 0.5
+      );
+      highlight.addColorStop(0, `rgba(255, 240, 220, ${opacity * 0.5})`);
+      highlight.addColorStop(1, `rgba(255, 240, 220, 0)`);
+      
+      ctx.fillStyle = highlight;
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fill();
+    } else if (dotType === CONFIG.SPECIAL_DOTS.PAINTER) {
+      // Точка-художник с пульсирующим белым свечением
+      const pulseValue = Math.sin(this.painterPulse) * 0.3 + 0.7; // От 0.4 до 1.0
+      
+      // Цвет точки-художника #BFC8FF
+      ctx.globalAlpha = opacity;
+      ctx.fillStyle = '#BFC8FF';
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      
+      // Пульсирующее белое свечение
+      ctx.shadowBlur = 15 * opacity * pulseValue;
+      ctx.shadowColor = `rgba(255, 255, 255, ${opacity * pulseValue * 0.8})`;
+      
+      const glowGradient = ctx.createRadialGradient(x, y, radius * 0.5, x, y, radius * 1.3);
+      glowGradient.addColorStop(0, `rgba(255, 255, 255, ${opacity * pulseValue * 0.4})`);
+      glowGradient.addColorStop(0.7, `rgba(255, 255, 255, ${opacity * pulseValue * 0.2})`);
+      glowGradient.addColorStop(1, `rgba(255, 255, 255, 0)`);
+      
+      ctx.fillStyle = glowGradient;
+      ctx.beginPath();
+      ctx.arc(x, y, radius * 1.3, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+  }
+  
+  // Функция для отрисовки замороженной точки (ледяной глыбы)
+  drawFrozenDot(ctx, x, y, radius, baseColor, opacity) {
+    // Анимация мерцания льда
+    const iceShimmer = Math.sin(Date.now() / 500) * 0.1 + 0.9;
+    
+    // Основа точки (приглушенный оригинальный цвет)
+    ctx.globalAlpha = opacity * 0.4;
+    ctx.fillStyle = baseColor;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+    
+    // Ледяной слой
+    const iceGradient = ctx.createRadialGradient(x, y, radius * 0.2, x, y, radius);
+    iceGradient.addColorStop(0, `rgba(200, 230, 255, ${opacity * 0.7 * iceShimmer})`);
+    iceGradient.addColorStop(0.5, `rgba(135, 206, 250, ${opacity * 0.6 * iceShimmer})`);
+    iceGradient.addColorStop(0.8, `rgba(100, 180, 230, ${opacity * 0.5 * iceShimmer})`);
+    iceGradient.addColorStop(1, `rgba(70, 130, 180, ${opacity * 0.4})`);
+    
+    ctx.fillStyle = iceGradient;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Ледяные трещины (простые линии)
+    ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.4})`;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x - radius * 0.5, y - radius * 0.3);
+    ctx.lineTo(x + radius * 0.2, y + radius * 0.4);
+    ctx.moveTo(x + radius * 0.3, y - radius * 0.4);
+    ctx.lineTo(x - radius * 0.1, y + radius * 0.5);
+    ctx.stroke();
+    
+    // Блики на льду
+    const highlight = ctx.createRadialGradient(
+      x - radius * 0.3, y - radius * 0.3, 0,
+      x - radius * 0.3, y - radius * 0.3, radius * 0.4
+    );
+    highlight.addColorStop(0, `rgba(255, 255, 255, ${opacity * 0.7 * iceShimmer})`);
+    highlight.addColorStop(1, `rgba(255, 255, 255, 0)`);
+    
+    ctx.fillStyle = highlight;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Пульсирующее ледяное свечение по краям
+    ctx.shadowBlur = 10 * opacity * iceShimmer;
+    ctx.shadowColor = `rgba(135, 206, 250, ${opacity * 0.5})`;
+    
+    ctx.strokeStyle = `rgba(173, 216, 230, ${opacity * 0.6 * iceShimmer})`;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(x, y, radius + 2, 0, Math.PI * 2);
+    ctx.stroke();
+    
+    ctx.shadowBlur = 0;
+  }
+}
+
+const player = new Player();
+
+// ==================== ОПТИМИЗАЦИЯ #7: Генерация сетки ====================
+function fillGrid(player) {
+  function hasPair() {
+    for (let r = 0; r < CONFIG.ROWS; r++) {
+      for (let c = 0; c < CONFIG.COLS; c++) {
+        const dot = player.grid[r][c];
+        const col = dot.color;
+        
+        // Пропускаем золотые точки при проверке пар
+        if (col >= CONFIG.SPECIAL_DOTS.RAINBOW) continue;
+        
+        if (r + 1 < CONFIG.ROWS) {
+          const nextDot = player.grid[r + 1][c];
+          if (nextDot.color === col || nextDot.color === CONFIG.SPECIAL_DOTS.RAINBOW) return true;
+        }
+        if (c + 1 < CONFIG.COLS) {
+          const nextDot = player.grid[r][c + 1];
+          if (nextDot.color === col || nextDot.color === CONFIG.SPECIAL_DOTS.RAINBOW) return true;
+        }
+        if (r + 1 < CONFIG.ROWS && c + 1 < CONFIG.COLS) {
+          const nextDot = player.grid[r + 1][c + 1];
+          if (nextDot.color === col || nextDot.color === CONFIG.SPECIAL_DOTS.RAINBOW) return true;
+        }
+        if (r + 1 < CONFIG.ROWS && c - 1 >= 0) {
+          const nextDot = player.grid[r + 1][c - 1];
+          if (nextDot.color === col || nextDot.color === CONFIG.SPECIAL_DOTS.RAINBOW) return true;
+        }
+      }
+    }
+    return false;
+  }
+  
+  let attempts = 0;
+  do {
+    if (attempts++ > 100) break;
+    player.grid = [];
+    
+    // Определяем, будет ли золотая точка на этой сетке
+    const hasGoldenDot = Math.random() < CONFIG.RAINBOW_CHANCE;
+    let goldenPlaced = false;
+    
+    for (let r = 0; r < CONFIG.ROWS; r++) {
+      const row = [];
+      for (let c = 0; c < CONFIG.COLS; c++) {
+        let color;
+        
+        // Размещаем золотую точку только один раз
+        if (hasGoldenDot && !goldenPlaced && Math.random() < 0.1) {
+          color = CONFIG.SPECIAL_DOTS.RAINBOW;
+          goldenPlaced = true;
+        }
+        // Обычная точка
+        else {
+          color = Math.floor(Math.random() * CONFIG.COLORS.length);
+        }
+        
+        row.push({ color: color, y: 0 });
+      }
+      player.grid.push(row);
+    }
+  } while (!hasPair());
+}
+
+// ==================== ОПТИМИЗАЦИЯ #8: Батчинг отрисовки ====================
+function draw(player) {
+  const ctx = player.ctx;
+  const canvas = player.canvas;
+  const pos = player.layoutCache;
+
+  // Очистка
+  ctx.fillStyle = '#12182b';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Отрисовка линии цепочки
+  if (player.chain.length > 0) {
+    const firstDot = player.grid[player.chain[0].r][player.chain[0].c];
+    let lineColor;
+    
+    if (firstDot.color === CONFIG.SPECIAL_DOTS.RAINBOW) {
+      lineColor = `hsl(${player.rainbowHue}, 100%, 60%)`;
+    } else if (firstDot.color === CONFIG.SPECIAL_DOTS.BOMB) {
+      lineColor = '#ff0000';
+    } else {
+      lineColor = CONFIG.COLORS[firstDot.color];
+    }
+    
+    ctx.globalAlpha = 0.4;
+    ctx.strokeStyle = lineColor;
+    ctx.lineWidth = 10;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.shadowBlur = 20;
+    ctx.shadowColor = lineColor;
+    
+    ctx.beginPath();
+    for (let i = 0; i < player.chain.length; i++) {
+      const p = pos[player.chain[i].r][player.chain[i].c];
+      const dot = player.grid[player.chain[i].r][player.chain[i].c];
+      if (i === 0) ctx.moveTo(p.x, p.y + dot.y);
+      else ctx.lineTo(p.x, p.y + dot.y);
+    }
+    if (player.lastPos) ctx.lineTo(player.lastPos.x, player.lastPos.y);
+    ctx.stroke();
+    
+    ctx.globalAlpha = 1;
+    ctx.shadowBlur = 0;
+    ctx.lineWidth = 4;
+    ctx.stroke();
+  }
+
+  // Обновляем анимации
+  player.updateAnimations();
+
+  // Батчинг отрисовки точек по цветам
+  const colorGroups = {};
+  const specialDots = [];
+  const frozenDots = [];
+  const selectedDots = [];
+  const animatingDotsMap = new Map();
+  
+  player.animatingDots.forEach(anim => {
+    animatingDotsMap.set(`${anim.r},${anim.c}`, anim);
+  });
+  
+  for (let r = 0; r < CONFIG.ROWS; r++) {
+    for (let c = 0; c < CONFIG.COLS; c++) {
+      const d = player.grid[r][c];
+      const p = pos[r][c];
+      const isSelected = player.chainSet.has(r + "," + c);
+      const anim = animatingDotsMap.get(`${r},${c}`);
+      const isFrozen = gameState.gameMode === 'freeze' && gameState.isFrozen(r, c);
+      
+      const dotInfo = { 
+        x: p.x, 
+        y: p.y + d.y, 
+        isSelected,
+        scale: anim ? anim.scale : 1,
+        opacity: anim ? anim.opacity : 1,
+        r, c,
+        baseColor: d.color < CONFIG.COLORS.length ? CONFIG.COLORS[d.color] : '#87CEFA'
+      };
+      
+      // Замороженные точки отрисовываем отдельно
+      if (isFrozen) {
+        frozenDots.push(dotInfo);
+      }
+      // Золотые и особые точки отрисовываем отдельно
+      else if (d.color === CONFIG.SPECIAL_DOTS.RAINBOW || d.color === CONFIG.SPECIAL_DOTS.PAINTER) {
+        specialDots.push({ ...dotInfo, type: d.color });
+      } else {
+        const color = CONFIG.COLORS[d.color];
+        if (!colorGroups[color]) colorGroups[color] = [];
+        colorGroups[color].push(dotInfo);
+      }
+      
+      if (isSelected && !isFrozen) {
+        selectedDots.push(dotInfo);
+      }
+    }
+  }
+  
+  // Отрисовка теней
+  ctx.fillStyle = "rgba(0,0,0,0.3)";
+  ctx.beginPath();
+  Object.values(colorGroups).forEach(dots => {
+    dots.forEach(dot => {
+      if (dot.opacity > 0.1) {
+        const radius = CONFIG.DOT_RADIUS * dot.scale;
+        ctx.moveTo(dot.x + 2 + radius, dot.y + 3);
+        ctx.arc(dot.x + 2, dot.y + 3, radius, 0, Math.PI * 2);
+      }
+    });
+  });
+  specialDots.forEach(dot => {
+    if (dot.opacity > 0.1) {
+      const radius = CONFIG.DOT_RADIUS * dot.scale;
+      ctx.moveTo(dot.x + 2 + radius, dot.y + 3);
+      ctx.arc(dot.x + 2, dot.y + 3, radius, 0, Math.PI * 2);
+    }
+  });
+  ctx.fill();
+  
+  // Отрисовка обычных точек по цветам
+  Object.entries(colorGroups).forEach(([color, dots]) => {
+    dots.forEach(dot => {
+      if (dot.opacity > 0.01) {
+        ctx.globalAlpha = dot.opacity;
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        const radius = CONFIG.DOT_RADIUS * dot.scale;
+        ctx.arc(dot.x, dot.y, radius, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    });
+  });
+  ctx.globalAlpha = 1;
+  
+  // Отрисовка особых точек
+  specialDots.forEach(dot => {
+    if (dot.opacity > 0.01) {
+      const radius = CONFIG.DOT_RADIUS * dot.scale;
+      player.drawSpecialDot(ctx, dot.x, dot.y, radius, dot.opacity, dot.type);
+    }
+  });
+  
+  // Отрисовка замороженных точек
+  frozenDots.forEach(dot => {
+    if (dot.opacity > 0.01) {
+      const radius = CONFIG.DOT_RADIUS * dot.scale;
+      player.drawFrozenDot(ctx, dot.x, dot.y, radius, dot.baseColor, dot.opacity);
+    }
+  });
+  
+  // Отрисовка выделения
+  if (selectedDots.length > 0) {
+    ctx.strokeStyle = "rgba(255,255,255,0.8)";
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    selectedDots.forEach(dot => {
+      ctx.moveTo(dot.x + CONFIG.DOT_RADIUS + 5, dot.y);
+      ctx.arc(dot.x, dot.y, CONFIG.DOT_RADIUS + 5, 0, Math.PI * 2);
+    });
+    ctx.stroke();
+  }
+
+  // Отрисовка частиц
+  player.particlePool.update();
+  const particles = player.particlePool.getActive();
+  
+  if (particles.length > 0) {
+    particles.forEach(pt => {
+      ctx.globalAlpha = pt.life;
+      ctx.fillStyle = `rgb(${pt.r},${pt.g},${pt.b})`;
+      ctx.fillRect(pt.x - pt.size/2, pt.y - pt.size/2, pt.size, pt.size);
+    });
+    ctx.globalAlpha = 1;
+  }
+}
+
+// ==================== Остальные функции ====================
+function nearestCell(p, player, isTouch = false) {
+  const pos = player.layoutCache;
+  let nearest = null;
+  let minDist = Infinity;
+  
+  const hitRadius = isTouch 
+    ? CONFIG.DOT_RADIUS * CONFIG.TOUCH_RADIUS_MULTIPLIER 
+    : CONFIG.DOT_RADIUS;
+  
+  for (let r = 0; r < CONFIG.ROWS; r++) {
+    for (let c = 0; c < CONFIG.COLS; c++) {
+      // Пропускаем замороженные точки в режиме Freeze
+      if (gameState.gameMode === 'freeze' && gameState.isFrozen(r, c)) {
+        continue;
+      }
+      
+      const dot = player.grid[r][c];
+      const d = Math.hypot(p.x - pos[r][c].x, p.y - (pos[r][c].y + dot.y));
+      if (d < hitRadius && d < minDist) {
+        minDist = d;
+        nearest = { r, c };
+      }
+    }
+  }
+  return nearest;
+}
+
+function neighbors(a, b) {
+  return Math.abs(a.r - b.r) <= 1 && Math.abs(a.c - b.c) <= 1 && !(a.r === b.r && a.c === b.c);
+}
+
+function getPos(e, canvas) {
+  const rect = canvas.getBoundingClientRect();
+  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+  const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+  return { x: clientX - rect.left, y: clientY - rect.top };
+}
+
+function showCombo(text, x, y) {
+  const comboEl = document.createElement('div');
+  comboEl.className = 'combo';
+  comboEl.textContent = text;
+  comboEl.style.left = x + 'px';
+  comboEl.style.top = y + 'px';
+  document.body.appendChild(comboEl);
+  
+  gameState.comboElements.add(comboEl);
+  
+  setTimeout(() => {
+    if (document.body.contains(comboEl)) {
+      document.body.removeChild(comboEl);
+    }
+    gameState.comboElements.delete(comboEl);
+  }, 1000);
+}
+
+// ==================== FREEZE MODE FUNCTIONS ====================
+
+// Сохранение прогресса режима Freeze
+function saveFreezeProgress() {
+  if (gameState.gameMode !== 'freeze' || gameState.gameComplete) return;
+  
+  const freezeState = {
+    score: gameState.score,
+    freezeMoveCounter: gameState.freezeMoveCounter,
+    frozenDots: Array.from(gameState.frozenDots),
+    totalMoves: gameState.totalMoves,
+    grid: player.grid.map(row => row.map(dot => ({ color: dot.color, y: dot.y }))),
+    timestamp: Date.now()
+  };
+  
+  try {
+    localStorage.setItem('doton_freeze_save', JSON.stringify(freezeState));
+  } catch (e) {
+    console.warn('Could not save freeze progress:', e);
+  }
+}
+
+// Загрузка прогресса режима Freeze
+function loadFreezeProgress() {
+  try {
+    const saved = localStorage.getItem('doton_freeze_save');
+    if (!saved) return null;
+    
+    const freezeState = JSON.parse(saved);
+    
+    // Проверяем, не слишком ли старое сохранение (24 часа)
+    if (Date.now() - freezeState.timestamp > 24 * 60 * 60 * 1000) {
+      clearFreezeProgress();
+      return null;
+    }
+    
+    return freezeState;
+  } catch (e) {
+    console.warn('Could not load freeze progress:', e);
+    return null;
+  }
+}
+
+// Очистка сохранённого прогресса
+function clearFreezeProgress() {
+  try {
+    localStorage.removeItem('doton_freeze_save');
+  } catch (e) {
+    console.warn('Could not clear freeze progress:', e);
+  }
+}
+
+// Проверка наличия сохранённой игры
+function hasFreezeProgress() {
+  const saved = loadFreezeProgress();
+  return saved !== null;
+}
+
+// Обновление текста кнопки "Играть"
+function updateStartButtonText() {
+  const startBtn = document.getElementById('startGame');
+  if (!startBtn) return;
+  
+  if (gameState.gameMode === 'freeze' && hasFreezeProgress()) {
+    startBtn.textContent = 'Продолжить';
+  } else {
+    startBtn.textContent = 'Играть';
+  }
+}
+
+// Показать предупреждение о морозе (минималистичное)
+function showFreezeWarning(count) {
+  // Только вибрация, без звука
+  if (navigator.vibrate) navigator.vibrate([30, 20, 30]);
+}
+
+// Показать эффект размораживания
+function showThawEffect(x, y) {
+  const effect = document.createElement('div');
+  effect.className = 'thaw-effect';
+  effect.style.left = x + 'px';
+  effect.style.top = y + 'px';
+  effect.style.width = '60px';
+  effect.style.height = '60px';
+  effect.style.background = 'radial-gradient(circle, rgba(255,165,0,0.6) 0%, transparent 70%)';
+  effect.style.borderRadius = '50%';
+  effect.style.transform = 'translate(-50%, -50%)';
+  document.body.appendChild(effect);
+  
+  setTimeout(() => {
+    if (document.body.contains(effect)) {
+      document.body.removeChild(effect);
+    }
+  }, 800);
+}
+
+// Показать глобальное потепление
+function showGlobalThawEffect() {
+  const effect = document.createElement('div');
+  effect.className = 'global-thaw-effect';
+  document.body.appendChild(effect);
+  
+  audioManager.play(600, 0.4, 'sine', 0.02);
+  if (navigator.vibrate) navigator.vibrate([50, 30, 80, 30, 50]);
+  
+  setTimeout(() => {
+    if (document.body.contains(effect)) {
+      document.body.removeChild(effect);
+    }
+  }, 1000);
+}
+
+// Получить текущее количество точек для заморозки в зависимости от очков
+function getDotsToFreezeCount() {
+  const thresholds = CONFIG.FREEZE.DIFFICULTY_THRESHOLDS;
+  let dotsToFreeze = thresholds[0].dotsToFreeze;
+  
+  for (let i = thresholds.length - 1; i >= 0; i--) {
+    if (gameState.score >= thresholds[i].score) {
+      dotsToFreeze = thresholds[i].dotsToFreeze;
+      break;
+    }
+  }
+  
+  return dotsToFreeze;
+}
+
+function getMovesBetweenFrost() {
+  const thresholds = CONFIG.FREEZE.DIFFICULTY_THRESHOLDS;
+  let movesBetween = thresholds[0].movesBetween;
+  
+  for (let i = thresholds.length - 1; i >= 0; i--) {
+    if (gameState.score >= thresholds[i].score) {
+      movesBetween = thresholds[i].movesBetween;
+      break;
+    }
+  }
+  
+  return movesBetween;
+}
+
+// Заморозить случайные точки
+function freezeRandomDots(count) {
+  // Используем динамическое количество на основе очков
+  const actualCount = count || getDotsToFreezeCount();
+  const availableDots = [];
+  
+  // Собираем все незамороженные точки
+  for (let r = 0; r < CONFIG.ROWS; r++) {
+    for (let c = 0; c < CONFIG.COLS; c++) {
+      if (!gameState.isFrozen(r, c)) {
+        availableDots.push({ r, c });
+      }
+    }
+  }
+  
+  // Перемешиваем и выбираем нужное количество
+  for (let i = availableDots.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [availableDots[i], availableDots[j]] = [availableDots[j], availableDots[i]];
+  }
+  
+  const toFreeze = availableDots.slice(0, Math.min(actualCount, availableDots.length));
+  
+  toFreeze.forEach(dot => {
+    gameState.addFrozenDot(dot.r, dot.c);
+    
+    // Добавляем ледяные частицы
+    const pos = player.layoutCache[dot.r][dot.c];
+    for (let i = 0; i < 10; i++) {
+      const vx = (Math.random() - 0.5) * 2;
+      const vy = (Math.random() - 0.5) * 2 - 1;
+      player.particlePool.get(
+        pos.x + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+        pos.y + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+        vx, vy, 135, 206, 250
+      );
+    }
+  });
+  
+  if (toFreeze.length > 0) {
+    showFreezeWarning(toFreeze.length);
+  }
+  
+  return toFreeze.length;
+}
+
+// Разморозить точки рядом с цепочкой
+function thawAdjacentDots(chain) {
+  const thawedPositions = [];
+  const rect = player.canvas.getBoundingClientRect();
+  
+  chain.forEach(cell => {
+    // Проверяем всех соседей
+    for (let dr = -1; dr <= 1; dr++) {
+      for (let dc = -1; dc <= 1; dc++) {
+        if (dr === 0 && dc === 0) continue;
+        const nr = cell.r + dr;
+        const nc = cell.c + dc;
+        
+        if (nr >= 0 && nr < CONFIG.ROWS && nc >= 0 && nc < CONFIG.COLS) {
+          if (gameState.isFrozen(nr, nc)) {
+            gameState.removeFrozenDot(nr, nc);
+            thawedPositions.push({ r: nr, c: nc });
+            
+            // Частицы оттаивания
+            const pos = player.layoutCache[nr][nc];
+            for (let i = 0; i < 15; i++) {
+              const vx = (Math.random() - 0.5) * 3;
+              const vy = (Math.random() - 0.5) * 3 - 1;
+              player.particlePool.get(
+                pos.x + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+                pos.y + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+                vx, vy, 255, 165, 0  // Оранжевые частицы
+              );
+            }
+            
+            // Эффект на экране
+            showThawEffect(rect.left + pos.x, rect.top + pos.y);
+          }
+        }
+      }
+    }
+  });
+  
+  return thawedPositions.length;
+}
+
+// Размораживание от особых точек (радиус 2)
+function thawFromSpecialDots(positions) {
+  const thawedCount = { count: 0 };
+  const rect = player.canvas.getBoundingClientRect();
+  
+  positions.forEach(pos => {
+    const radius = CONFIG.FREEZE.SPECIAL_THAW_RADIUS;
+    
+    for (let dr = -radius; dr <= radius; dr++) {
+      for (let dc = -radius; dc <= radius; dc++) {
+        if (dr === 0 && dc === 0) continue;
+        const nr = pos.r + dr;
+        const nc = pos.c + dc;
+        
+        if (nr >= 0 && nr < CONFIG.ROWS && nc >= 0 && nc < CONFIG.COLS) {
+          if (gameState.isFrozen(nr, nc)) {
+            gameState.removeFrozenDot(nr, nc);
+            thawedCount.count++;
+            
+            // Частицы оттаивания
+            const layoutPos = player.layoutCache[nr][nc];
+            for (let i = 0; i < 12; i++) {
+              const vx = (Math.random() - 0.5) * 3;
+              const vy = (Math.random() - 0.5) * 3 - 1;
+              player.particlePool.get(
+                layoutPos.x + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+                layoutPos.y + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+                vx, vy, 255, 215, 0  // Золотые частицы
+              );
+            }
+            
+            showThawEffect(rect.left + layoutPos.x, rect.top + layoutPos.y);
+          }
+        }
+      }
+    }
+  });
+  
+  return thawedCount.count;
+}
+
+// Глобальное размораживание (очистка всего льда)
+function globalThaw() {
+  const frozenCount = gameState.frozenDots.size;
+  
+  if (frozenCount > 0) {
+    // Добавляем частицы для всех замороженных точек
+    gameState.frozenDots.forEach(key => {
+      const [r, c] = key.split(',').map(Number);
+      const pos = player.layoutCache[r][c];
+      
+      for (let i = 0; i < 8; i++) {
+        const vx = (Math.random() - 0.5) * 4;
+        const vy = (Math.random() - 0.5) * 4 - 2;
+        player.particlePool.get(
+          pos.x + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+          pos.y + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+          vx, vy, 255, 100, 50  // Огненные частицы
+        );
+      }
+    });
+    
+    gameState.clearAllFrozenDots();
+    showGlobalThawEffect();
+  }
+  
+  return frozenCount;
+}
+
+// Проверка на наличие доступных ходов
+function hasAvailableMoves() {
+  for (let r = 0; r < CONFIG.ROWS; r++) {
+    for (let c = 0; c < CONFIG.COLS; c++) {
+      // Пропускаем замороженные точки
+      if (gameState.isFrozen(r, c)) continue;
+      
+      const dot = player.grid[r][c];
+      const col = dot.color;
+      
+      // Проверяем соседей
+      const directions = [
+        [0, 1], [1, 0], [1, 1], [1, -1]
+      ];
+      
+      for (const [dr, dc] of directions) {
+        const nr = r + dr;
+        const nc = c + dc;
+        
+        if (nr >= 0 && nr < CONFIG.ROWS && nc >= 0 && nc < CONFIG.COLS) {
+          // Пропускаем замороженных соседей
+          if (gameState.isFrozen(nr, nc)) continue;
+          
+          const nextDot = player.grid[nr][nc];
+          
+          // Проверяем совместимость
+          if (nextDot.color === col) return true;
+          if (col === CONFIG.SPECIAL_DOTS.RAINBOW || nextDot.color === CONFIG.SPECIAL_DOTS.RAINBOW) return true;
+          if (col === CONFIG.SPECIAL_DOTS.PAINTER || nextDot.color === CONFIG.SPECIAL_DOTS.PAINTER) return true;
+        }
+      }
+    }
+  }
+  return false;
+}
+
+// Завершение игры в режиме Freeze
+async function endGameFreeze(reason) {
+  gameState.gameComplete = true;
+  
+  await profile.incrementGames();
+  const isNewRecord = await profile.updateBestScore(gameState.score);
+  await profile.updateModeScore('freeze', gameState.score);
+  
+  // Награда пупырками по порогам очков
+  let bubbleReward = 0;
+  if (gameState.score >= 40000) {
+    bubbleReward = 5;
+  } else if (gameState.score >= 30000) {
+    bubbleReward = 3;
+  } else if (gameState.score >= 20000) {
+    bubbleReward = 1;
+  }
+  
+  if (bubbleReward > 0) {
+    await profile.addBubbles(bubbleReward);
+  }
+  
+  document.getElementById('finalScore').textContent = gameState.score;
+  
+  const titleEl = document.getElementById('finalTitle');
+  const subtitleEl = document.getElementById('finalSubtitle');
+  const score = gameState.score;
+  const moves = gameState.totalMoves;
+  
+  if (reason === 'frozen') {
+    titleEl.textContent = '🥶 Всё замёрзло!';
+    subtitleEl.textContent = `Вы продержались ${moves} ходов`;
+  } else if (reason === 'no_moves') {
+    titleEl.textContent = '🚫 Нет ходов!';
+    subtitleEl.textContent = `Вы продержались ${moves} ходов`;
+  } else if (isNewRecord) {
+    titleEl.textContent = '🏆 Новый рекорд!';
+    subtitleEl.textContent = `Невероятно! ${moves} ходов!`;
+  } else if (score >= 40000) {
+    titleEl.textContent = '🌋 Легенда огня!';
+    subtitleEl.textContent = `${moves} ходов. Вы покорили лёд!`;
+  } else if (score >= 30000) {
+    titleEl.textContent = '🔥 Мастер тепла!';
+    subtitleEl.textContent = `${moves} ходов. Невероятная игра!`;
+  } else if (score >= 20000) {
+    titleEl.textContent = '☀️ Отлично!';
+    subtitleEl.textContent = `${moves} ходов. Достойный результат!`;
+  } else if (score >= 10000) {
+    titleEl.textContent = '🌤️ Хорошо!';
+    subtitleEl.textContent = `${moves} ходов. Продолжайте греть!`;
+  } else if (score >= 5000) {
+    titleEl.textContent = '🌥️ Неплохо!';
+    subtitleEl.textContent = `${moves} ходов. Есть потенциал!`;
+  } else {
+    titleEl.textContent = '❄️ Холодно...';
+    subtitleEl.textContent = `${moves} ходов. Попробуйте ещё раз!`;
+  }
+  
+  // Показываем награду пупыркой
+  if (bubbleReward > 0) {
+    subtitleEl.textContent += ` 🫧 +${bubbleReward}`;
+  }
+  
+  document.getElementById('pauseBtn').classList.remove('visible');
+  document.getElementById('restartBtnTop').classList.remove('visible');
+  document.getElementById('gameOverModal').style.display = 'flex';
+}
+
+function createInputHandlers(player) {
+  const start = (e) => {
+    if (gameState.gameComplete) return;
+    e.preventDefault();
+    
+    audioManager.init();
+    
+    player.dragging = true;
+    player.chain = [];
+    player.chainSet.clear();
+    
+    const p = getPos(e, player.canvas);
+    const isTouch = e.type.includes('touch');
+    const cell = nearestCell(p, player, isTouch);
+    if (cell) {
+      player.chain.push(cell);
+      player.chainSet.add(cell.r + "," + cell.c);
+      audioManager.playNote(0, 0.08, 'sine', 0.08); // C4
+      
+      if (isTouch && navigator.vibrate) {
+        navigator.vibrate(8);
+      }
+    }
+    player.lastPos = p;
+    draw(player);
+  };
+  
+  const move = (e) => {
+    if (!player.dragging || gameState.gameComplete) return;
+    e.preventDefault();
+    
+    const p = getPos(e, player.canvas);
+    player.lastPos = p;
+    const isTouch = e.type.includes('touch');
+    const cell = nearestCell(p, player, isTouch);
+    
+    if (cell) {
+      const last = player.chain[player.chain.length - 1];
+      if (last && neighbors(last, cell) && !player.chainSet.has(cell.r + "," + cell.c)) {
+        const currentDot = player.grid[cell.r][cell.c];
+        const lastDot = player.grid[last.r][last.c];
+        
+        // Если предыдущая точка была художником - можно соединить только с другим художником
+        if (lastDot.color === CONFIG.SPECIAL_DOTS.PAINTER) {
+          if (currentDot.color === CONFIG.SPECIAL_DOTS.PAINTER) {
+            // Два художника - разрешаем соединение для взрыва!
+            player.chain.push(cell);
+            player.chainSet.add(cell.r + "," + cell.c);
+            audioManager.playNote(player.chain.length - 1, 0.15, 'sine', 0.12);
+            if (isTouch && navigator.vibrate) {
+              navigator.vibrate(5);
+            }
+          }
+          return;
+        }
+        
+        // Проверяем совместимость цветов
+        let canConnect = false;
+        
+        // Если последняя точка в цепочке - золотая, цепочка заканчивается
+        if (lastDot.color === CONFIG.SPECIAL_DOTS.RAINBOW) {
+          canConnect = false;
+        }
+        // Золотая точка подходит к любому цвету (но после неё цепочка заканчивается)
+        else if (currentDot.color === CONFIG.SPECIAL_DOTS.RAINBOW) {
+          canConnect = true;
+        }
+        // Точка-художник подходит только к своему цвету или золотой
+        else if (currentDot.color === CONFIG.SPECIAL_DOTS.PAINTER) {
+          canConnect = (lastDot.color < CONFIG.COLORS.length || lastDot.color === CONFIG.SPECIAL_DOTS.RAINBOW);
+        }
+        // Обычные точки должны совпадать по цвету
+        else if (currentDot.color === lastDot.color) {
+          canConnect = true;
+        }
+        
+        if (canConnect) {
+          player.chain.push(cell);
+          player.chainSet.add(cell.r + "," + cell.c);
+          audioManager.playNote(player.chain.length - 1, 0.15, 'sine', 0.12);
+          
+          if (isTouch && navigator.vibrate) {
+            navigator.vibrate(5);
+          }
+        }
+      }
+    }
+    draw(player);
+  };
+  
+  const end = (e) => {
+    if (!player.dragging || gameState.gameComplete) return;
+    player.dragging = false;
+    player.lastPos = null;
+    
+    if (player.chain.length >= 2) {
+      processChain(player);
+    }
+    
+    player.chain = [];
+    player.chainSet.clear();
+    draw(player);
+  };
+  
+  return { start, move, end };
+}
+
+function processChain(player) {
+  const pos = player.layoutCache;
+  const firstDot = player.grid[player.chain[0].r][player.chain[0].c];
+  const chainLength = player.chain.length;
+  
+  // Добавляем собранные точки в статистику
+  profile.addDots(chainLength);
+  
+  // Проверяем наличие точки-художника в цепочке
+  let hasPainter = false;
+  let painterPositions = [];
+  let painterColor = null;
+  let painterCount = 0;
+  
+  for (let i = 0; i < player.chain.length; i++) {
+    const dot = player.grid[player.chain[i].r][player.chain[i].c];
+    if (dot.color === CONFIG.SPECIAL_DOTS.PAINTER) {
+      hasPainter = true;
+      painterCount++;
+      painterPositions.push(player.chain[i]);
+    } else if (dot.color < CONFIG.COLORS.length && painterColor === null) {
+      // Запоминаем цвет обычной точки для покраски
+      painterColor = dot.color;
+    }
+  }
+  
+  // Взрыв при соединении двух художников!
+  if (painterCount >= 2) {
+    const rect = player.canvas.getBoundingClientRect();
+    const centerPos = painterPositions[0];
+    const p = pos[centerPos.r][centerPos.c];
+    
+    // Мощный визуальный эффект
+    for (let i = 0; i < 50; i++) {
+      const angle = (Math.PI * 2 * i) / 50;
+      const speed = 3 + Math.random() * 4;
+      const vx = Math.cos(angle) * speed;
+      const vy = Math.sin(angle) * speed;
+      player.particlePool.get(
+        p.x, p.y, vx, vy, 255, 255, 255
+      );
+    }
+    
+    // Визуальный эффект взрыва (без звука)
+    if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 100]);
+    
+    // Анимация взрыва для всех точек в цепочке
+    player.chain.forEach(c => {
+      player.animateDot(c.r, c.c, true);
+    });
+    
+    // Показываем бонус
+    showCombo('💥 +500', rect.left + rect.width / 2, rect.top + rect.height / 2);
+    
+    // Начисляем 500 очков
+    gameState.score += 500;
+    document.getElementById('scoreDisplay').textContent = gameState.score;
+    
+    // Заменяем точки на новые (как в обычной логике)
+    player.chain.forEach(c => {
+      const rand = Math.random();
+      if (rand < CONFIG.PAINTER_CHANCE) {
+        player.grid[c.r][c.c].color = CONFIG.SPECIAL_DOTS.PAINTER;
+      } else {
+        player.grid[c.r][c.c].color = Math.floor(Math.random() * CONFIG.COLORS.length);
+      }
+      setTimeout(() => {
+        player.animateDot(c.r, c.c, false);
+      }, 80);
+    });
+    
+    return; // Выходим из функции, не продолжаем обычную обработку
+  }
+  
+  // Обработка точки-художника (одна)
+  if (hasPainter && painterColor !== null) {
+    const rect = player.canvas.getBoundingClientRect();
+    
+    // Собираем всех соседей точек-художников
+    const neighborsToPaint = new Set();
+    
+    painterPositions.forEach(painterPos => {
+      // Анимация взрыва точки-художника
+      player.animateDot(painterPos.r, painterPos.c, true);
+      
+      // Находим всех соседей
+      for (let dr = -1; dr <= 1; dr++) {
+        for (let dc = -1; dc <= 1; dc++) {
+          if (dr === 0 && dc === 0) continue;
+          const nr = painterPos.r + dr;
+          const nc = painterPos.c + dc;
+          if (nr >= 0 && nr < CONFIG.ROWS && nc >= 0 && nc < CONFIG.COLS) {
+            const neighborDot = player.grid[nr][nc];
+            // Красим только обычные точки (не особые)
+            if (neighborDot.color < CONFIG.COLORS.length) {
+              neighborsToPaint.add(`${nr},${nc}`);
+            }
+          }
+        }
+      }
+      
+      // Частицы белого цвета
+      const p = pos[painterPos.r][painterPos.c];
+      for (let i = 0; i < 20; i++) {
+        const vx = (Math.random() - 0.5) * 4;
+        const vy = (Math.random() - 0.5) * 4 - 1;
+        player.particlePool.get(
+          p.x + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+          p.y + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+          vx, vy, 255, 255, 255
+        );
+      }
+    });
+    
+    // Вибрация
+    if (navigator.vibrate) navigator.vibrate([50, 30, 50]);
+    
+    // Красим соседние точки с задержкой
+    setTimeout(() => {
+      neighborsToPaint.forEach(key => {
+        const [r, c] = key.split(',').map(Number);
+        player.grid[r][c].color = painterColor;
+        player.animateDot(r, c, false);
+        
+        // Частицы цвета покраски
+        const p = pos[r][c];
+        const color = CONFIG.COLORS[painterColor];
+        player.addParticle(p.x, p.y, color, 10);
+      });
+    }, 100);
+    
+    showCombo(`🖌️ Покраска!`, rect.left + rect.width / 2, rect.top + rect.height / 2);
+  }
+  
+  // Обычная обработка цепочки
+  const isZen = gameState.gameMode === 'zen';
+  const isFreeze = gameState.gameMode === 'freeze';
+  const scoring = calculateScore(chainLength, gameState.gameMode === 'endless', isZen, isFreeze);
+  
+  if (!scoring || typeof scoring.points !== 'number') {
+    console.warn('Invalid scoring result:', scoring);
+    return;
+  }
+  
+  // Подсчет бонуса от золотых точек (+150 очков за каждую)
+  let rainbowBonus = 0;
+  let hasSpecialDot = false;
+  const specialPositions = [];
+  
+  player.chain.forEach(c => {
+    const dot = player.grid[c.r][c.c];
+    if (dot.color === CONFIG.SPECIAL_DOTS.RAINBOW) {
+      rainbowBonus += 150;
+      hasSpecialDot = true;
+      specialPositions.push(c);
+    }
+    if (dot.color === CONFIG.SPECIAL_DOTS.PAINTER) {
+      hasSpecialDot = true;
+      specialPositions.push(c);
+    }
+  });
+  
+  const rect = player.canvas.getBoundingClientRect();
+
+  // Анимация взрыва для удаляемых точек
+  player.chain.forEach(c => {
+    player.animateDot(c.r, c.c, true);
+  });
+  
+  // Вибрация
+  if (navigator.vibrate) {
+    if (chainLength >= 10) {
+      navigator.vibrate([80, 40, 80, 40, 60]);
+    } else if (chainLength >= 7) {
+      navigator.vibrate([30, 10, 30]);
+    } else if (chainLength >= 4) {
+      navigator.vibrate(20);
+    } else {
+      navigator.vibrate(10);
+    }
+  }
+
+  // Частицы
+  player.chain.forEach(c => {
+    const p = pos[c.r][c.c];
+    const dot = player.grid[c.r][c.c];
+    const particleCount = Math.min(chainLength + 8, 20);
+    
+    if (dot.color === CONFIG.SPECIAL_DOTS.RAINBOW) {
+      // Персиковые/золотистые частицы для особой точки
+      for (let i = 0; i < particleCount; i++) {
+        // Различные оттенки персикового/золотистого
+        const goldVariation = Math.random();
+        let r, g, b;
+        
+        if (goldVariation < 0.33) {
+          // Светлый персиковый
+          r = 255; g = 230; b = 200;
+        } else if (goldVariation < 0.66) {
+          // Основной персиковый #FFCFA8
+          r = 255; g = 207; b = 168;
+        } else {
+          // Темный персиковый
+          r = 230; g = 180; b = 140;
+        }
+        
+        const vx = (Math.random() - 0.5) * 3;
+        const vy = (Math.random() - 0.5) * 3 - 1;
+        player.particlePool.get(
+          p.x + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+          p.y + (Math.random() - 0.5) * CONFIG.DOT_RADIUS,
+          vx, vy, r, g, b
+        );
+      }
+    } else {
+      const color = CONFIG.COLORS[dot.color];
+      player.addParticle(p.x, p.y, color, particleCount);
+    }
+  });
+
+  if (scoring.explosion && chainLength >= 10) {
+    audioManager.play(800, 0.25, 'sine', 0.02);
+    
+    // В режиме Freeze - глобальное потепление
+    if (isFreeze && scoring.globalThaw) {
+      globalThaw();
+      showCombo(`🔥 Глобальное потепление!`, rect.left + rect.width / 2, rect.top + rect.height / 2 - 40);
+    }
+    
+    // Анимация взрыва всех точек
+    for (let r = 0; r < CONFIG.ROWS; r++) {
+      for (let c = 0; c < CONFIG.COLS; c++) {
+        player.animateDot(r, c, true);
+        const p = pos[r][c];
+        const dot = player.grid[r][c];
+        if (dot.color >= CONFIG.SPECIAL_DOTS.RAINBOW) {
+          player.addParticle(p.x, p.y, '#ffffff', 8);
+        } else {
+          player.addParticle(p.x, p.y, CONFIG.COLORS[dot.color], 8);
+        }
+      }
+    }
+    
+    setTimeout(() => {
+      fillGrid(player);
+      for (let r = 0; r < CONFIG.ROWS; r++) {
+        for (let c = 0; c < CONFIG.COLS; c++) {
+          player.animateDot(r, c, false);
+        }
+      }
+    }, 100);
+    
+    const totalPoints = scoring.points + rainbowBonus;
+    showCombo(`💥 ${totalPoints}`, rect.left + rect.width / 2, rect.top + rect.height / 2);
+    
+  } else {
+    // В режиме Freeze - размораживание от цепочки 8+
+    if (isFreeze && scoring.thaw) {
+      const thawedCount = thawAdjacentDots(player.chain);
+      if (thawedCount > 0) {
+        showCombo(`🔥 Разморозка! -${thawedCount} льда`, rect.left + rect.width / 2, rect.top + rect.height / 2 - 40);
+        audioManager.play(500, 0.2, 'sine', 0.015);
+      }
+    }
+    
+    // Размораживание от особых точек (радиус 2)
+    if (isFreeze && hasSpecialDot && specialPositions.length > 0) {
+      const thawedFromSpecial = thawFromSpecialDots(specialPositions);
+      if (thawedFromSpecial > 0) {
+        showCombo(`✨ Тепло! -${thawedFromSpecial} льда`, rect.left + rect.width / 2, rect.top + rect.height / 2 - 70);
+      }
+    }
+    
+    // Обновляем только выбранные точки
+    player.chain.forEach(c => {
+      // При обычном обновлении может появиться точка-художник с 2% шансом
+      const rand = Math.random();
+      if (rand < CONFIG.PAINTER_CHANCE) {
+        player.grid[c.r][c.c].color = CONFIG.SPECIAL_DOTS.PAINTER;
+      } else {
+        player.grid[c.r][c.c].color = Math.floor(Math.random() * CONFIG.COLORS.length);
+      }
+      setTimeout(() => {
+        player.animateDot(c.r, c.c, false);
+      }, 80);
+    });
+  }
+
+  let finalPoints = scoring.points + rainbowBonus;
+  
+  if (chainLength >= 5 && scoring.points > 0 && !isZen && !isFreeze) {
+    gameState.addMultiplierProgress(chainLength);
+    
+    if (gameState.multiplier > 1) {
+      finalPoints = Math.floor(finalPoints * gameState.multiplier);
+      showCombo(`x2! +${finalPoints}`, rect.left + rect.width / 2, rect.top + rect.height / 2 - 40);
+    }
+  } else if (chainLength < 5 && !isZen && !isFreeze) {
+    gameState.addMultiplierProgress(chainLength);
+  }
+
+  gameState.score = Math.max(0, gameState.score + finalPoints);
+  
+  if (isZen) {
+    gameState.movesLeft--;
+    document.getElementById('movesValue').textContent = gameState.movesLeft;
+    
+    if (gameState.movesLeft <= 0) {
+      endGameZen();
+      return;
+    }
+  }
+  
+  // Логика режима Freeze
+  if (isFreeze) {
+    // Инкрементируем счётчик ходов
+    const shouldFreeze = gameState.incrementFreezeMove();
+    
+    if (shouldFreeze) {
+      // Замораживаем точки с небольшой задержкой
+      setTimeout(() => {
+        freezeRandomDots(); // Количество определяется автоматически по очкам
+        
+        // Автосохранение после заморозки
+        setTimeout(() => {
+          saveFreezeProgress();
+          
+          // Проверяем, есть ли доступные ходы
+          if (!hasAvailableMoves()) {
+            clearFreezeProgress();  // Очищаем сохранение при проигрыше
+            endGameFreeze('frozen');
+          }
+        }, 500);
+      }, 300);
+    } else {
+      // Проверяем ходы после обычного хода (с задержкой на анимацию падения)
+      setTimeout(() => {
+        saveFreezeProgress();
+        
+        // Проверяем, есть ли доступные ходы после падения точек
+        if (!hasAvailableMoves()) {
+          clearFreezeProgress();
+          endGameFreeze('no_moves');
+        }
+      }, 400);
+    }
+  }
+  
+  const scoreEl = document.getElementById('scoreDisplay');
+  scoreEl.classList.add('animate');
+  setTimeout(() => scoreEl.classList.remove('animate'), 200);
+  
+  if (scoring.points < 0) {
+    // Мягкий звук штрафа с ревербом
+    audioManager.playNote(1, 0.25, 'sine', 0.03, true); // D4 - мягкая нота
+    setTimeout(() => audioManager.playNote(0, 0.3, 'sine', 0.025, true), 100); // C4 - понижение
+    if (navigator.vibrate) navigator.vibrate(50);
+  } else {
+    // Высокая нота при завершении
+    audioManager.playNote(Math.min(chainLength + 2, 20), 0.15, 'sine', 0.08);
+  }
+  
+  if (!scoring.explosion || chainLength < 10) {
+    const prefix = finalPoints > 0 ? '+' : '';
+    let comboText = `${prefix}${finalPoints}`;
+    if (rainbowBonus > 0) {
+      comboText = `✨ ${comboText}`;
+    }
+    showCombo(comboText, rect.left + rect.width / 2, rect.top + rect.height / 2);
+  }
+  
+  document.getElementById('scoreDisplay').textContent = gameState.score;
+}
+
+function updateTimer() {
+  const timerValue = document.getElementById('timerValue');
+  
+  timerValue.textContent = gameState.timeLeft;
+  
+  if (gameState.timeLeft <= 10) {
+    timerValue.classList.add('warning');
+  } else {
+    timerValue.classList.remove('warning');
+  }
+}
+
+function startTimer() {
+  clearInterval(gameState.timerInterval);
+  
+  if (gameState.gameMode === 'endless') {
+    gameState.timeLeft = CONFIG.ENDLESS_TIME;
+  } else if (gameState.gameMode === 'timed') {
+    gameState.timeLeft = CONFIG.ROUND_TIME;
+  } else {
+    return;
+  }
+  
+  const timerValue = document.getElementById('timerValue');
+  timerValue.classList.remove('warning');
+  
+  gameState.lastChainTime = Date.now();
+  gameState.startMultiplierDecay();
+  
+  updateTimer();
+  
+  gameState.timerInterval = setInterval(() => {
+    gameState.timeLeft--;
+    updateTimer();
+    
+    if (gameState.timeLeft <= 5 && gameState.timeLeft > 0) {
+      audioManager.play(700, 0.08, 'sine', 0.01);
+    }
+    
+    if (gameState.timeLeft <= 0) {
+      if (gameState.gameMode === 'endless') {
+        endGameEndless();
+      }
+    }
+  }, 1000);
+}
+
+async function endGameEndless() {
+  gameState.gameComplete = true;
+  clearInterval(gameState.timerInterval);
+  gameState.stopMultiplierDecay();
+  
+  await profile.incrementGames();
+  const isNewRecord = await profile.updateBestScore(gameState.score);
+  await profile.updateModeScore('endless', gameState.score);
+  
+  document.getElementById('finalScore').textContent = gameState.score;
+  
+  const titleEl = document.getElementById('finalTitle');
+  const subtitleEl = document.getElementById('finalSubtitle');
+  
+  const score = gameState.score;
+  const timeLeft = gameState.timeLeft;
+  
+  if (isNewRecord) {
+    titleEl.textContent = '🏆 Новый рекорд!';
+    subtitleEl.textContent = 'Вы побили свой предыдущий результат';
+  } else if (timeLeft > 0) {
+    titleEl.textContent = 'Игра окончена';
+    subtitleEl.textContent = 'Короткая цепочка! Собирайте минимум 4 точки';
+  } else {
+    if (score >= 2000) {
+      titleEl.textContent = 'Легенда';
+      subtitleEl.textContent = 'Невероятное мастерство';
+    } else if (score >= 1500) {
+      titleEl.textContent = 'Мастер';
+      subtitleEl.textContent = 'Впечатляющий результат';
+    } else if (score >= 1000) {
+      titleEl.textContent = 'Эксперт';
+      subtitleEl.textContent = 'Отличная игра';
+    } else if (score >= 600) {
+      titleEl.textContent = 'Хорошо';
+      subtitleEl.textContent = 'Достойный результат';
+    } else {
+      titleEl.textContent = 'Время вышло';
+      subtitleEl.textContent = 'Продолжайте тренироваться';
+    }
+  }
+  
+  document.getElementById('pauseBtn').classList.remove('visible');
+  document.getElementById('restartBtnTop').classList.remove('visible');
+  document.getElementById('gameOverModal').style.display = 'flex';
+}
+
+async function endGameZen() {
+  gameState.gameComplete = true;
+  
+  await profile.incrementGames();
+  const isNewRecord = await profile.updateBestScore(gameState.score);
+  await profile.updateModeScore('zen', gameState.score);
+  
+  // Система наград за очки в режиме Дзен
+  let bubblesEarned = 0;
+  const score = gameState.score;
+  
+  if (score >= 7500) {
+    bubblesEarned = 5;
+  } else if (score >= 5500) {
+    bubblesEarned = 3;
+  } else if (score >= 3500) {
+    bubblesEarned = 1;
+  }
+  
+  if (bubblesEarned > 0) {
+    await profile.addBubbles(bubblesEarned);
+  }
+  
+  document.getElementById('finalScore').textContent = score;
+  
+  const titleEl = document.getElementById('finalTitle');
+  const subtitleEl = document.getElementById('finalSubtitle');
+  
+  if (bubblesEarned === 5) {
+    titleEl.textContent = '👑 ЛЕГЕНДА!';
+    subtitleEl.textContent = `Невероятно! Вы заработали ${bubblesEarned} пупырок! 🫧`;
+  } else if (bubblesEarned === 3) {
+    titleEl.textContent = '🌟 МАСТЕР!';
+    subtitleEl.textContent = `Отлично! Вы заработали ${bubblesEarned} пупырки! 🫧`;
+  } else if (bubblesEarned === 1) {
+    titleEl.textContent = '💎 ХОРОШО!';
+    subtitleEl.textContent = `Вы заработали ${bubblesEarned} пупырку! 🫧`;
+  } else if (isNewRecord) {
+    titleEl.textContent = '🏆 Новый рекорд!';
+    subtitleEl.textContent = 'Отличная игра!';
+  } else if (score >= 3000) {
+    titleEl.textContent = '✨ Превосходно!';
+    subtitleEl.textContent = 'Почти идеально!';
+  } else if (score >= 2500) {
+    titleEl.textContent = '👍 Хорошо!';
+    subtitleEl.textContent = 'Отличный результат!';
+  } else {
+    titleEl.textContent = 'Игра завершена';
+    subtitleEl.textContent = 'Попробуйте ещё раз!';
+  }
+  
+  document.getElementById('pauseBtn').classList.remove('visible');
+  document.getElementById('restartBtnTop').classList.remove('visible');
+  document.getElementById('gameOverModal').style.display = 'flex';
+}
+
+function loop() {
+  draw(player);
+  
+  if (!gameState.gameComplete && !gameState.isPaused) {
+    gameState.animationId = requestAnimationFrame(loop);
+  }
+}
+
+function startGame(loadSaved = false) {
+  if (gameState.animationId) {
+    cancelAnimationFrame(gameState.animationId);
+  }
+  
+  player.removeEventListeners();
+  
+  gameState.reset();
+  player.reset();
+  
+  document.getElementById('scoreDisplay').textContent = 0;
+  
+  const circularTimer = document.getElementById('circularTimer');
+  const movesTimer = document.getElementById('movesTimer');
+  const freezeTimer = document.getElementById('freezeTimer');
+  
+  if (gameState.gameMode === 'zen') {
+    circularTimer.style.display = 'none';
+    movesTimer.style.display = 'flex';
+    freezeTimer.style.display = 'none';
+    
+    gameState.movesLeft = 30;
+    document.getElementById('movesValue').textContent = gameState.movesLeft;
+    
+  } else if (gameState.gameMode === 'endless') {
+    circularTimer.style.display = 'flex';
+    movesTimer.style.display = 'none';
+    freezeTimer.style.display = 'none';
+    
+  } else if (gameState.gameMode === 'freeze') {
+    // Режим "Заморозка"
+    circularTimer.style.display = 'none';
+    movesTimer.style.display = 'none';
+    freezeTimer.style.display = 'flex';
+    
+    // Проверяем сохранённый прогресс
+    const savedProgress = loadSaved ? loadFreezeProgress() : null;
+    
+    if (savedProgress) {
+      // Восстанавливаем состояние
+      gameState.score = savedProgress.score;
+      gameState.freezeMoveCounter = savedProgress.freezeMoveCounter;
+      gameState.frozenDots = new Set(savedProgress.frozenDots);
+      gameState.totalMoves = savedProgress.totalMoves;
+      
+      // Восстанавливаем сетку
+      player.grid = savedProgress.grid.map(row => row.map(dot => ({ color: dot.color, y: dot.y })));
+      
+      document.getElementById('scoreDisplay').textContent = gameState.score;
+      gameState.updateFreezeUI();
+      
+      // Очищаем сохранение после загрузки
+      clearFreezeProgress();
+    } else {
+      // Новая игра
+      gameState.freezeMoveCounter = 0;
+      gameState.frozenDots.clear();
+      gameState.totalMoves = 0;
+      gameState.updateFreezeUI();
+      
+      fillGrid(player);
+    }
+  }
+  
+  // Заполняем сетку для остальных режимов
+  if (gameState.gameMode !== 'freeze') {
+    fillGrid(player);
+  }
+  
+  const handlers = createInputHandlers(player);
+  
+  player.addEventListener(player.canvas, "mousedown", handlers.start);
+  player.addEventListener(player.canvas, "mousemove", handlers.move);
+  player.addEventListener(window, "mouseup", handlers.end);
+  
+  const touchStartHandler = (e) => {
+    e.preventDefault();
+    handlers.start(e);
+  };
+  const touchMoveHandler = (e) => {
+    e.preventDefault();
+    handlers.move(e);
+  };
+  
+  player.canvas.addEventListener("touchstart", touchStartHandler, {passive: false});
+  player.canvas.addEventListener("touchmove", touchMoveHandler, {passive: false});
+  player.eventListeners.push(
+    {element: player.canvas, event: "touchstart", handler: touchStartHandler},
+    {element: player.canvas, event: "touchmove", handler: touchMoveHandler}
+  );
+  
+  player.addEventListener(window, "touchend", handlers.end);
+  player.addEventListener(player.canvas, 'contextmenu', e => e.preventDefault());
+  
+  document.getElementById('gameOverModal').style.display = 'none';
+  
+  if (gameState.gameMode !== 'zen' && gameState.gameMode !== 'freeze') {
+    startTimer();
+  }
+  
+  loop();
+}
+
+function resizeCanvas() {
+  const isMobile = window.innerWidth <= 768;
+  const padding = (CONFIG.DOT_RADIUS + 10) * 2;
+  
+  if (isMobile) {
+    const maxSize = Math.min(window.innerWidth - 40, window.innerHeight - 300, 550);
+    player.canvas.width = maxSize;
+    player.canvas.height = maxSize;
+  } else {
+    const gridSize = CONFIG.COLS * CONFIG.DOT_RADIUS * 2 + (CONFIG.COLS - 1) * CONFIG.GAP;
+    const canvasSize = Math.min(gridSize + padding, 700);
+    player.canvas.width = canvasSize;
+    player.canvas.height = canvasSize;
+  }
+  
+  player.updateLayoutCache();
+}
+
+function initProfileUI() {
+  profile.updateUI();
+  
+  // Обновляем статистику
+  document.getElementById('totalGamesDisplay').textContent = profile.totalGames;
+  document.getElementById('totalDotsDisplay').textContent = profile.formatNumber(profile.totalDots);
+  document.getElementById('bestScoreDisplay').textContent = profile.formatNumber(profile.bestScore);
+  
+  // Обновляем лучшие результаты по режимам
+  document.getElementById('bestSprintScore').textContent = profile.formatNumber(profile.bestSprintScore);
+  document.getElementById('bestZenScore').textContent = profile.formatNumber(profile.bestZenScore);
+  document.getElementById('bestFreezeScore').textContent = profile.formatNumber(profile.bestFreezeScore);
+  
+  // Обновляем друзей
+  document.getElementById('friendsCount').textContent = profile.friends.length;
+  
+  const avatarGrid = document.getElementById('avatarGrid');
+  avatarGrid.innerHTML = '';
+  
+  AVATARS.forEach((avatar, index) => {
+    const option = document.createElement('div');
+    option.className = 'avatar-option' + (index === profile.avatar ? ' selected' : '');
+    option.textContent = avatar.emoji;
+    option.style.background = avatar.gradient;
+    option.onclick = () => {
+      profile.avatar = index;
+      profile.saveProfile();
+      profile.updateUI();
+      
+      document.querySelectorAll('.avatar-option').forEach(o => o.classList.remove('selected'));
+      option.classList.add('selected');
+    };
+    avatarGrid.appendChild(option);
+  });
+}
+
+// ==================== Onboarding ====================
+let currentOnboardingStep = 1;
+const totalOnboardingSteps = 3;
+
+function showOnboarding() {
+  document.getElementById('onboardingOverlay').style.display = 'flex';
+  currentOnboardingStep = 1;
+  updateOnboardingStep();
+}
+
+async function hideOnboarding() {
+  document.getElementById('onboardingOverlay').style.display = 'none';
+  await profile.markOnboardingSeen();
+}
+
+function updateOnboardingStep() {
+  document.querySelectorAll('.onboarding-step').forEach(step => {
+    step.classList.remove('active');
+  });
+  
+  const currentStep = document.querySelector(`[data-step="${currentOnboardingStep}"]`);
+  if (currentStep) {
+    currentStep.classList.add('active');
+  }
+  
+  document.querySelectorAll('.onboarding-indicator').forEach((indicator, index) => {
+    indicator.classList.toggle('active', index === currentOnboardingStep - 1);
+  });
+  
+  const nextBtn = document.getElementById('onboardingNext');
+  if (currentOnboardingStep === totalOnboardingSteps) {
+    nextBtn.textContent = 'Начать играть!';
+  } else {
+    nextBtn.textContent = 'Далее';
+  }
+}
+
+function nextOnboardingStep() {
+  if (currentOnboardingStep < totalOnboardingSteps) {
+    currentOnboardingStep++;
+    updateOnboardingStep();
+  } else {
+    hideOnboarding();
+  }
+}
+
+// ==================== Event Listeners ====================
+document.getElementById('onboardingNext').addEventListener('click', () => {
+  nextOnboardingStep();
+});
+
+document.getElementById('onboardingSkip').addEventListener('click', () => {
+  hideOnboarding();
+});
+
+document.getElementById('startGame').addEventListener('click', () => {
+  const menu = document.getElementById('menu');
+  const gameContainer = document.getElementById('gameContainer');
+  
+  // Запускаем анимацию погружения
+  menu.classList.add('diving');
+  audioManager.init();
+  audioManager.play(400, 0.3, 'sine', 0.04);
+  
+  // После анимации показываем игру
+  setTimeout(() => {
+    menu.style.display = 'none';
+    menu.classList.remove('diving');
+    
+    gameContainer.style.display = 'flex';
+    gameContainer.classList.add('appearing');
+    
+    document.getElementById('pauseBtn').classList.add('visible');
+    document.getElementById('restartBtnTop').classList.add('visible');
+    
+    resizeCanvas();
+    
+    // Загружаем сохранение для режима Freeze если есть
+    const shouldLoadSave = gameState.gameMode === 'freeze' && hasFreezeProgress();
+    startGame(shouldLoadSave);
+    
+    // Убираем класс анимации появления
+    setTimeout(() => {
+      gameContainer.classList.remove('appearing');
+    }, 500);
+  }, 1700);
+});
+
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.dataset.mode) {
+      document.querySelectorAll('[data-mode]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      gameState.gameMode = btn.dataset.mode;
+      
+      // Обновляем текст кнопки "Играть"
+      updateStartButtonText();
+    }
+  });
+});
+
+document.getElementById('profileBtn').addEventListener('click', () => {
+  initProfileUI();
+  
+  if (profile.isAuthenticated) {
+    document.getElementById('profileAuthenticated').style.display = 'block';
+    document.getElementById('profileGuest').style.display = 'none';
+  } else {
+    document.getElementById('profileAuthenticated').style.display = 'none';
+    document.getElementById('profileGuest').style.display = 'block';
+    
+    // Показываем аватар гостя
+    const guestAvatar = document.getElementById('guestAvatarDisplay');
+    const avatar = AVATARS[profile.avatar];
+    guestAvatar.textContent = avatar.emoji;
+    guestAvatar.style.background = avatar.gradient;
+    
+    // Обновляем статистику гостя
+    document.getElementById('guestBestScoreDisplay').textContent = profile.formatNumber(profile.bestScore);
+    document.getElementById('guestTotalGamesDisplay').textContent = profile.totalGames;
+    document.getElementById('guestTotalDotsDisplay').textContent = profile.formatNumber(profile.totalDots);
+  }
+  
+  document.getElementById('profileModal').style.display = 'flex';
+});
+
+document.getElementById('showAuthFromProfile').addEventListener('click', () => {
+  document.getElementById('profileModal').style.display = 'none';
+  document.getElementById('authModal').style.display = 'flex';
+  showLoginForm();
+});
+
+document.getElementById('closeProfileBtn').addEventListener('click', () => {
+  document.getElementById('profileModal').style.display = 'none';
+  document.getElementById('editNicknameSection').style.display = 'none';
+  document.getElementById('avatarSection').style.display = 'none';
+});
+
+document.getElementById('avatarDisplay').addEventListener('click', () => {
+  const section = document.getElementById('avatarSection');
+  section.style.display = section.style.display === 'none' ? 'block' : 'none';
+});
+
+document.getElementById('editNicknameBtn').addEventListener('click', () => {
+  document.getElementById('editNicknameSection').style.display = 'block';
+  document.getElementById('nicknameInput').value = profile.nickname;
+  document.getElementById('nicknameInput').focus();
+});
+
+document.getElementById('saveNicknameBtn').addEventListener('click', () => {
+  const newNickname = document.getElementById('nicknameInput').value.trim();
+  if (newNickname) {
+    profile.nickname = newNickname;
+    profile.saveProfile();
+    profile.updateUI();
+    document.getElementById('editNicknameSection').style.display = 'none';
+    audioManager.play(500, 0.06);
+  }
+});
+
+document.getElementById('cancelNicknameBtn').addEventListener('click', () => {
+  document.getElementById('editNicknameSection').style.display = 'none';
+});
+
+document.getElementById('rulesBtn').addEventListener('click', () => {
+  document.getElementById('profileModal').style.display = 'none';
+  document.getElementById('rulesModal').style.display = 'flex';
+});
+
+document.getElementById('closeRulesBtn').addEventListener('click', () => {
+  document.getElementById('rulesModal').style.display = 'none';
+});
+
+document.getElementById('startTutorialBtn').addEventListener('click', () => {
+  document.getElementById('rulesModal').style.display = 'none';
+  showOnboarding();
+});
+
+document.getElementById('playAgain').addEventListener('click', () => {
+  // Очищаем сохранение, т.к. начинаем новую игру
+  if (gameState.gameMode === 'freeze') {
+    clearFreezeProgress();
+  }
+  
+  document.getElementById('gameOverModal').style.display = 'none';
+  document.getElementById('pauseBtn').classList.add('visible');
+  document.getElementById('restartBtnTop').classList.add('visible');
+  resizeCanvas();
+  startGame(false);  // Не загружаем сохранение
+});
+
+document.getElementById('pauseBtn').addEventListener('click', () => {
+  if (!gameState.isPaused) {
+    gameState.pause();
+  }
+});
+
+document.getElementById('restartBtnTop').addEventListener('click', () => {
+  // Очищаем сохранение при рестарте
+  if (gameState.gameMode === 'freeze') {
+    clearFreezeProgress();
+  }
+  
+  if (gameState.animationId) {
+    cancelAnimationFrame(gameState.animationId);
+  }
+  clearInterval(gameState.timerInterval);
+  
+  resizeCanvas();
+  startGame(false);  // Не загружаем сохранение
+});
+
+document.getElementById('backToMenu').addEventListener('click', () => {
+  // Очищаем сохранение после завершения игры
+  if (gameState.gameMode === 'freeze') {
+    clearFreezeProgress();
+  }
+  
+  if (gameState.animationId) {
+    cancelAnimationFrame(gameState.animationId);
+  }
+  clearInterval(gameState.timerInterval);
+  gameState.clearComboElements();
+  player.removeEventListeners();
+  
+  document.getElementById('gameOverModal').style.display = 'none';
+  document.getElementById('gameContainer').style.display = 'none';
+  document.getElementById('menu').style.display = 'flex';
+  document.getElementById('pauseBtn').classList.remove('visible');
+  document.getElementById('restartBtnTop').classList.remove('visible');
+  
+  updateStartButtonText();
+});
+
+document.getElementById('resumeGame').addEventListener('click', () => {
+  gameState.resume();
+});
+
+document.getElementById('restartGame').addEventListener('click', () => {
+  // Очищаем сохранение при рестарте
+  if (gameState.gameMode === 'freeze') {
+    clearFreezeProgress();
+  }
+  
+  document.getElementById('pauseModal').style.display = 'none';
+  gameState.isPaused = false;
+  
+  if (gameState.animationId) {
+    cancelAnimationFrame(gameState.animationId);
+  }
+  clearInterval(gameState.timerInterval);
+  
+  resizeCanvas();
+  startGame(false);  // Не загружаем сохранение
+});
+
+document.getElementById('exitGame').addEventListener('click', () => {
+  // Сохраняем прогресс перед выходом
+  if (gameState.gameMode === 'freeze' && !gameState.gameComplete) {
+    saveFreezeProgress();
+  }
+  
+  if (gameState.animationId) {
+    cancelAnimationFrame(gameState.animationId);
+  }
+  clearInterval(gameState.timerInterval);
+  gameState.clearComboElements();
+  player.removeEventListeners();
+  
+  document.getElementById('pauseModal').style.display = 'none';
+  document.getElementById('profileModal').style.display = 'none';
+  document.getElementById('gameContainer').style.display = 'none';
+  document.getElementById('menu').style.display = 'flex';
+  document.getElementById('pauseBtn').classList.remove('visible');
+  document.getElementById('restartBtnTop').classList.remove('visible');
+  gameState.isPaused = false;
+  
+  // Обновляем кнопку "Играть" если есть сохранение
+  updateStartButtonText();
+});
+
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    if (document.getElementById('gameContainer').style.display === 'flex') {
+      resizeCanvas();
+      if (!gameState.gameComplete && !gameState.isPaused) {
+        draw(player);
+      }
+    }
+  }, 250);
+});
+
+window.addEventListener('beforeunload', () => {
+  audioManager.cleanup();
+  if (gameState.animationId) {
+    cancelAnimationFrame(gameState.animationId);
+  }
+  clearInterval(gameState.timerInterval);
+  gameState.stopMultiplierDecay();
+});
+
+// ==================== Auth Modal Handlers ====================
+function showLoginForm() {
+  document.getElementById('loginForm').style.display = 'block';
+  document.getElementById('registerForm').style.display = 'none';
+  document.getElementById('authTitle').textContent = 'Вход';
+  document.getElementById('authSubtitle').textContent = 'Войдите в свой аккаунт';
+  document.getElementById('authError').style.display = 'none';
+  document.getElementById('registerError').style.display = 'none';
+}
+
+function showRegisterForm() {
+  document.getElementById('loginForm').style.display = 'none';
+  document.getElementById('registerForm').style.display = 'block';
+  document.getElementById('authTitle').textContent = 'Регистрация';
+  document.getElementById('authSubtitle').textContent = 'Создайте новый аккаунт';
+  document.getElementById('authError').style.display = 'none';
+  document.getElementById('registerError').style.display = 'none';
+}
+
+document.getElementById('showRegisterBtn').addEventListener('click', showRegisterForm);
+document.getElementById('showLoginBtn').addEventListener('click', showLoginForm);
+
+document.getElementById('closeAuthBtn').addEventListener('click', () => {
+  document.getElementById('authModal').style.display = 'none';
+  // Возвращаемся в профиль
+  document.getElementById('profileBtn').click();
+});
+
+document.getElementById('loginBtn').addEventListener('click', async () => {
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
+  const errorEl = document.getElementById('authError');
+
+  if (!email || !password) {
+    errorEl.textContent = 'Заполните все поля';
+    errorEl.style.display = 'block';
+    return;
+  }
+
+  errorEl.style.display = 'none';
+  document.getElementById('loginBtn').disabled = true;
+  document.getElementById('loginBtn').textContent = 'Вход...';
+
+  const result = await profile.login(email, password);
+
+  if (result.success) {
+    document.getElementById('authModal').style.display = 'none';
+    document.getElementById('loginEmail').value = '';
+    document.getElementById('loginPassword').value = '';
+    
+    // Показываем профиль с авторизованным пользователем
+    document.getElementById('profileAuthenticated').style.display = 'block';
+    document.getElementById('profileGuest').style.display = 'none';
+    initProfileUI();
+    document.getElementById('profileModal').style.display = 'flex';
+    audioManager.play(500, 0.06);
+  } else {
+    errorEl.textContent = result.error || 'Ошибка входа';
+    errorEl.style.display = 'block';
+  }
+
+  document.getElementById('loginBtn').disabled = false;
+  document.getElementById('loginBtn').textContent = 'Войти';
+});
+
+document.getElementById('registerBtn').addEventListener('click', async () => {
+  const username = document.getElementById('registerUsername').value.trim();
+  const email = document.getElementById('registerEmail').value;
+  const password = document.getElementById('registerPassword').value;
+  const errorEl = document.getElementById('registerError');
+
+  if (!username || !email || !password) {
+    errorEl.textContent = 'Заполните все поля';
+    errorEl.style.display = 'block';
+    return;
+  }
+
+  if (password.length < 6) {
+    errorEl.textContent = 'Пароль должен быть минимум 6 символов';
+    errorEl.style.display = 'block';
+    return;
+  }
+
+  errorEl.style.display = 'none';
+  document.getElementById('registerBtn').disabled = true;
+  document.getElementById('registerBtn').textContent = 'Регистрация...';
+
+  const result = await profile.register(username, email, password);
+
+  if (result.success) {
+    document.getElementById('authModal').style.display = 'none';
+    document.getElementById('registerUsername').value = '';
+    document.getElementById('registerEmail').value = '';
+    document.getElementById('registerPassword').value = '';
+    
+    // Показываем профиль с авторизованным пользователем
+    document.getElementById('profileAuthenticated').style.display = 'block';
+    document.getElementById('profileGuest').style.display = 'none';
+    initProfileUI();
+    document.getElementById('profileModal').style.display = 'flex';
+    audioManager.play(500, 0.06);
+  } else {
+    errorEl.textContent = result.error || 'Ошибка регистрации';
+    errorEl.style.display = 'block';
+  }
+
+  document.getElementById('registerBtn').disabled = false;
+  document.getElementById('registerBtn').textContent = 'Зарегистрироваться';
+});
+
+// Добавляем кнопку выхода в профиль
+const profileSection = document.querySelector('.profile-section:last-of-type');
+if (profileSection) {
+  const logoutBtn = document.createElement('button');
+  logoutBtn.className = 'modal-btn secondary';
+  logoutBtn.textContent = 'Выйти';
+  logoutBtn.style.marginTop = '15px';
+  logoutBtn.addEventListener('click', () => {
+    profile.logout();
+    document.getElementById('profileModal').style.display = 'none';
+    audioManager.play(400, 0.08);
+  });
+  profileSection.appendChild(logoutBtn);
+}
+
+// Инициализация
+player.initCanvas();
+profile.updateUI();
+updateStartButtonText();
+
+// Обработчики для модалки лидеров
+document.getElementById('leaderboardBtn').addEventListener('click', () => {
+  document.getElementById('profileModal').style.display = 'none';
+  document.getElementById('leaderboardModal').style.display = 'flex';
+  
+  // Обновляем данные текущего пользователя
+  const avatar = AVATARS[profile.avatar];
+  document.getElementById('leaderboardUserAvatar').textContent = avatar.emoji;
+  document.getElementById('leaderboardUserAvatar').style.background = avatar.gradient;
+  document.getElementById('leaderboardUserName').textContent = profile.nickname;
+  document.getElementById('leaderboardUserScore').textContent = profile.formatNumber(profile.bestSprintScore);
+});
+
+document.getElementById('closeLeaderboardBtn').addEventListener('click', () => {
+  document.getElementById('leaderboardModal').style.display = 'none';
+  document.getElementById('profileModal').style.display = 'flex';
+});
+
+// Табы лидеров
+document.querySelectorAll('.leaderboard-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.leaderboard-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    
+    const mode = tab.dataset.mode;
+    let score = 0;
+    if (mode === 'sprint') score = profile.bestSprintScore;
+    else if (mode === 'zen') score = profile.bestZenScore;
+    else if (mode === 'freeze') score = profile.bestFreezeScore;
+    
+    document.getElementById('leaderboardUserScore').textContent = profile.formatNumber(score);
+  });
+});
+
+// Обработчики для модалки друзей
+document.getElementById('friendsBtn').addEventListener('click', () => {
+  document.getElementById('profileModal').style.display = 'none';
+  document.getElementById('friendsModal').style.display = 'flex';
+  renderFriendsList();
+});
+
+document.getElementById('closeFriendsBtn').addEventListener('click', () => {
+  document.getElementById('friendsModal').style.display = 'none';
+  document.getElementById('profileModal').style.display = 'flex';
+});
+
+document.getElementById('addFriendBtn').addEventListener('click', () => {
+  const friendId = document.getElementById('friendIdInput').value.trim().toUpperCase();
+  if (friendId && friendId !== profile.id && !profile.friends.includes(friendId)) {
+    profile.friends.push(friendId);
+    profile.saveLocalProfile();
+    document.getElementById('friendIdInput').value = '';
+    document.getElementById('friendsCount').textContent = profile.friends.length;
+    renderFriendsList();
+    audioManager.play(500, 0.06);
+  }
+});
+
+function renderFriendsList() {
+  const list = document.getElementById('friendsList');
+  
+  if (profile.friends.length === 0) {
+    list.innerHTML = `
+      <div style="text-align:center;padding:30px;color:var(--text-light);">
+        <div style="font-size:40px;margin-bottom:10px;">👥</div>
+        <p>Пока нет друзей</p>
+        <p style="font-size:12px;margin-top:5px;">Добавьте друзей по их ID</p>
+      </div>
+    `;
+    return;
+  }
+  
+  list.innerHTML = profile.friends.map((friendId, index) => `
+    <div class="leaderboard-item">
+      <div class="leaderboard-avatar" style="background:linear-gradient(135deg, #74b9ff, #0984e3);">👤</div>
+      <div class="leaderboard-info">
+        <div class="leaderboard-name">${friendId}</div>
+      </div>
+      <button onclick="removeFriend(${index})" style="background:none;border:none;color:var(--text-light);cursor:pointer;font-size:16px;">✕</button>
+    </div>
+  `).join('');
+}
+
+function removeFriend(index) {
+  profile.friends.splice(index, 1);
+  profile.saveLocalProfile();
+  document.getElementById('friendsCount').textContent = profile.friends.length;
+  renderFriendsList();
+  audioManager.play(400, 0.08);
+}
+
+// Показываем онбординг при первом запуске
+if (!profile.hasSeenOnboarding) {
+  showOnboarding();
+}
+</script>
+</body>
+</html>
